@@ -103,7 +103,10 @@ To add new topics:
 1. Add JSON files to `public/topics/`
 2. Update `public/topics/manifest.json`
 3. Commit and push to GitHub
-4. Enable GitHub Pages (Settings → Pages → Source: main branch)
+4. **First time only**: Enable GitHub Pages
+   - Make repository public: `gh repo edit mikisegall/shelter-sessions --visibility public`
+   - Go to Settings → Pages → Source: main branch → Save
+   - Wait ~1 minute for deployment
 5. Users tap "Check for New Topics" to download
 
 ## Troubleshooting
