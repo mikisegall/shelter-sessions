@@ -30,12 +30,41 @@ interface SyncResult {
 }
 
 /**
+ * Fetch with timeout support
+ */
+const fetchWithTimeout = async (
+  url: string,
+  timeoutMs: number = 10000
+): Promise<Response> => {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+  try {
+    const response = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        'Accept': 'application/json',
+        'Cache-Control': 'no-cache',
+      },
+    });
+    clearTimeout(timeoutId);
+    return response;
+  } catch (error) {
+    clearTimeout(timeoutId);
+    if (error instanceof Error && error.name === 'AbortError') {
+      throw new Error('Request timeout');
+    }
+    throw error;
+  }
+};
+
+/**
  * Fetch the manifest file from GitHub
  */
 const fetchManifest = async (): Promise<Manifest> => {
-  const response = await fetch(MANIFEST_URL);
+  const response = await fetchWithTimeout(MANIFEST_URL);
   if (!response.ok) {
-    throw new Error('Failed to fetch manifest');
+    throw new Error(`Failed to fetch manifest: ${response.status} ${response.statusText}`);
   }
   return response.json();
 };
@@ -44,9 +73,9 @@ const fetchManifest = async (): Promise<Manifest> => {
  * Fetch a topic file from GitHub
  */
 const fetchTopic = async (filename: string): Promise<Topic> => {
-  const response = await fetch(`${TOPICS_BASE_URL}${filename}`);
+  const response = await fetchWithTimeout(`${TOPICS_BASE_URL}${filename}`);
   if (!response.ok) {
-    throw new Error(`Failed to fetch topic: ${filename}`);
+    throw new Error(`Failed to fetch topic ${filename}: ${response.status} ${response.statusText}`);
   }
   return response.json();
 };
