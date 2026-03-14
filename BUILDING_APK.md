@@ -33,7 +33,22 @@ If you don't have one:
 
 ## Step-by-Step Build Process
 
-### Step 1: Login to EAS
+### Step 1: Validate Your Build (IMPORTANT)
+
+Before submitting to EAS, run the validation script to catch issues early:
+
+```bash
+npm run validate-build
+```
+
+This checks:
+- ✅ All bundled topic files are tracked by git
+- ✅ TypeScript compiles without errors
+- ⚠️  Warns about uncommitted changes
+
+**Why this matters:** EAS builds from a clean git checkout. If bundled files aren't committed, the build will fail. This script catches that BEFORE using a build credit.
+
+### Step 2: Login to EAS
 
 ```bash
 eas login
