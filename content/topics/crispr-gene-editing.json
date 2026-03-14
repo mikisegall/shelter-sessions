@@ -1,0 +1,107 @@
+{
+  "id": "crispr-gene-editing",
+  "title": "How CRISPR Gene Editing Works",
+  "category": "science",
+  "estimatedReadingTime": 12,
+  "createdAt": "2026-03-14T08:00:00Z",
+  "tags": ["genetics", "biotechnology", "medicine", "innovation"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "Imagine having molecular scissors that can cut and edit DNA with pinpoint precision. That's CRISPR - a revolutionary gene-editing technology that's transforming medicine, agriculture, and our understanding of life itself. Discovered in bacteria as a defense mechanism against viruses, CRISPR has become one of the most powerful tools in modern biology."
+    },
+    {
+      "type": "key_point",
+      "text": "CRISPR stands for 'Clustered Regularly Interspaced Short Palindromic Repeats' - sequences found in bacterial DNA. Bacteria use CRISPR as an immune system, storing fragments of viral DNA to recognize and destroy viruses that attack them again."
+    },
+    {
+      "type": "highlight",
+      "text": "The breakthrough came in 2012 when scientists Jennifer Doudna and Emmanuelle Charpentier figured out how to reprogram CRISPR to edit any DNA sequence they wanted. They won the Nobel Prize in Chemistry in 2020 for this discovery."
+    },
+    {
+      "type": "detail",
+      "text": "Here's how it works: CRISPR uses two main components. First, a 'guide RNA' - a short piece of RNA designed to match the target DNA sequence you want to edit. Second, an enzyme called Cas9 that acts like molecular scissors. The guide RNA leads Cas9 to the exact location in the genome, where Cas9 cuts the DNA."
+    },
+    {
+      "type": "detail",
+      "text": "Once the DNA is cut, the cell's natural repair mechanisms kick in. Scientists can take advantage of this repair process in two ways: they can simply disrupt a gene by letting the cell repair it imperfectly, or they can provide a template for the cell to copy, effectively inserting new genetic information."
+    },
+    {
+      "type": "example",
+      "text": "In 2019, CRISPR was used to successfully treat sickle cell disease in patients. The therapy edited stem cells to produce healthy hemoglobin, potentially curing a disease that had plagued them since birth. This marked one of the first approved clinical uses of CRISPR in humans."
+    },
+    {
+      "type": "key_point",
+      "text": "The potential applications are vast: eliminating genetic diseases, creating drought-resistant crops, developing new cancer treatments, and even bringing back extinct species. However, the technology also raises profound ethical questions about 'designer babies' and permanently altering the human genome."
+    },
+    {
+      "type": "highlight",
+      "text": "In 2018, a Chinese scientist claimed to have created the first 'CRISPR babies' - twin girls whose DNA was edited as embryos to be resistant to HIV. This sparked international outrage and led to calls for stricter regulations on human germline editing."
+    },
+    {
+      "type": "detail",
+      "text": "CRISPR isn't perfect yet. 'Off-target effects' - where Cas9 cuts DNA at unintended locations - remain a concern. Scientists are developing more precise versions like 'base editors' and 'prime editors' that can make smaller, more controlled changes without cutting DNA at all."
+    },
+    {
+      "type": "summary",
+      "text": "CRISPR has democratized gene editing, turning what once required years of work into something achievable in weeks. As the technology matures, it promises to reshape medicine and agriculture. The key challenge ahead isn't just scientific - it's determining as a society how far we should go in rewriting the code of life."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does CRISPR originally stand for in bacteria?",
+      "options": [
+        "A tool for cutting DNA",
+        "An immune system defense mechanism",
+        "A type of enzyme",
+        "A genetic mutation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "CRISPR originally evolved in bacteria as an immune system to defend against viral attacks. Bacteria store fragments of viral DNA in CRISPR sequences to recognize and destroy those viruses if they attack again."
+    },
+    {
+      "question": "What are the two main components of CRISPR gene editing?",
+      "options": [
+        "DNA and RNA",
+        "Guide RNA and Cas9 enzyme",
+        "Proteins and antibodies",
+        "Chromosomes and genes"
+      ],
+      "correctAnswer": 1,
+      "explanation": "CRISPR uses a guide RNA to locate the target DNA sequence and the Cas9 enzyme to cut the DNA at that precise location. Together, they form a programmable gene-editing system."
+    },
+    {
+      "question": "What was one of the first approved medical uses of CRISPR in humans?",
+      "options": [
+        "Treating cancer",
+        "Preventing HIV",
+        "Treating sickle cell disease",
+        "Curing blindness"
+      ],
+      "correctAnswer": 2,
+      "explanation": "In 2019, CRISPR was successfully used to treat sickle cell disease by editing stem cells to produce healthy hemoglobin, marking a major milestone in clinical gene therapy."
+    },
+    {
+      "question": "What is an 'off-target effect' in CRISPR editing?",
+      "options": [
+        "When the treatment doesn't work",
+        "When Cas9 cuts DNA at unintended locations",
+        "When the guide RNA fails",
+        "When cells reject the treatment"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Off-target effects occur when Cas9 accidentally cuts DNA at locations other than the intended target. This is a key safety concern that scientists are working to minimize through more precise editing techniques."
+    },
+    {
+      "question": "Who won the 2020 Nobel Prize in Chemistry for developing CRISPR gene editing?",
+      "options": [
+        "Watson and Crick",
+        "Franklin and Wilkins",
+        "Doudna and Charpentier",
+        "Venter and Collins"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Jennifer Doudna and Emmanuelle Charpentier won the 2020 Nobel Prize in Chemistry for their groundbreaking work in 2012, showing that CRISPR could be reprogrammed to edit any DNA sequence."
+    }
+  ]
+}

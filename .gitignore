@@ -78,9 +78,6 @@ coverage/
 .vscode
 .cache
 
-# Local content storage (will be synced)
-content/topics/*.json
-
 # TypeScript
 *.tsbuildinfo
 
