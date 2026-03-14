@@ -14,7 +14,8 @@ import { StatusBar } from 'expo-status-bar';
 import { Topic } from '../types/content';
 import { ContentCard } from '../components/topic/ContentCard';
 import { QuizCard } from '../components/topic/QuizCard';
-import { colors, typography, spacing, borderRadius } from '../constants/theme';
+import { ProgressBar } from '../components/common/ProgressBar';
+import { colors, typography, spacing, borderRadius, getCategoryColor } from '../constants/theme';
 
 interface SwipeableTopicScreenProps {
   topic: Topic;
@@ -68,10 +69,11 @@ export const SwipeableTopicScreen: React.FC<SwipeableTopicScreenProps> = ({
 
       // Special rendering for intro block (first content block)
       if (block.type === 'intro') {
+        const categoryColor = getCategoryColor(topic.category);
         return (
           <View style={styles.cardContainer}>
             <View style={[styles.introCard, isDarkMode ? styles.cardDark : styles.cardLight]}>
-              <View style={[styles.categoryBadge, { backgroundColor: colors.primary.main }]}>
+              <View style={[styles.categoryBadge, { backgroundColor: categoryColor.main }]}>
                 <Text style={styles.categoryText}>{topic.category.toUpperCase()}</Text>
               </View>
               <Text style={[styles.title, isDarkMode ? styles.textDark : styles.textLight]}>
@@ -194,18 +196,13 @@ export const SwipeableTopicScreen: React.FC<SwipeableTopicScreenProps> = ({
           <Text style={styles.backButtonHeaderText}>← Home</Text>
         </TouchableOpacity>
 
-        <View style={styles.progressContainer}>
-          <View style={styles.progressBar}>
-            <View
-              style={[
-                styles.progressFill,
-                {
-                  width: `${((currentIndex + 1) / cards.length) * 100}%`,
-                  backgroundColor: colors.primary.main,
-                },
-              ]}
-            />
-          </View>
+        <View style={styles.progressContainerHeader}>
+          <ProgressBar
+            current={currentIndex + 1}
+            total={cards.length}
+            isDarkMode={isDarkMode}
+            showLabel={false}
+          />
           <Text style={[styles.progressText, isDarkMode ? styles.textSecondaryDark : styles.textSecondaryLight]}>
             {currentIndex + 1} / {cards.length}
           </Text>
@@ -214,6 +211,15 @@ export const SwipeableTopicScreen: React.FC<SwipeableTopicScreenProps> = ({
         <TouchableOpacity onPress={onToggleDarkMode} style={styles.darkModeButton}>
           <Text style={styles.darkModeIcon}>{isDarkMode ? '☀️' : '🌙'}</Text>
         </TouchableOpacity>
+      </View>
+
+      {/* Progress Indicator */}
+      <View style={styles.progressContainer}>
+        <ProgressBar
+          current={currentIndex + 1}
+          total={cards.length}
+          isDarkMode={isDarkMode}
+        />
       </View>
 
       {/* Swipeable content */}
@@ -266,20 +272,9 @@ const styles = StyleSheet.create({
     fontSize: typography.sizes.base,
     fontWeight: typography.weights.semibold,
   },
-  progressContainer: {
+  progressContainerHeader: {
     flex: 1,
     marginRight: spacing.base,
-  },
-  progressBar: {
-    height: 4,
-    backgroundColor: colors.neutral.border,
-    borderRadius: borderRadius.full,
-    overflow: 'hidden',
-    marginBottom: spacing.sm,
-  },
-  progressFill: {
-    height: '100%',
-    borderRadius: borderRadius.full,
   },
   progressText: {
     fontSize: typography.sizes.xs,

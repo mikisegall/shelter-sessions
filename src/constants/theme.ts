@@ -4,20 +4,55 @@
  */
 
 export const colors = {
-  // Primary palette - Blue shades
+  // Primary palette - Rich blue
   primary: {
-    main: '#2563EB', // Bright blue
+    main: '#3B82F6', // Vibrant blue
     light: '#60A5FA',
-    dark: '#1E40AF',
-    bg: '#EFF6FF', // Very light blue background
+    dark: '#2563EB',
+    bg: '#EFF6FF',
+    gradient: ['#3B82F6', '#2563EB'],
   },
 
   // Secondary - Purple accent
   secondary: {
-    main: '#7C3AED',
+    main: '#8B5CF6',
     light: '#A78BFA',
-    dark: '#5B21B6',
+    dark: '#7C3AED',
     bg: '#F5F3FF',
+  },
+
+  // Category colors
+  categories: {
+    finance: {
+      main: '#10B981',
+      light: '#34D399',
+      bg: '#D1FAE5',
+    },
+    economics: {
+      main: '#F59E0B',
+      light: '#FBBF24',
+      bg: '#FEF3C7',
+    },
+    geopolitics: {
+      main: '#EF4444',
+      light: '#F87171',
+      bg: '#FEE2E2',
+    },
+    technology: {
+      main: '#3B82F6',
+      light: '#60A5FA',
+      bg: '#DBEAFE',
+    },
+    science: {
+      main: '#8B5CF6',
+      light: '#A78BFA',
+      bg: '#EDE9FE',
+    },
+    culture: {
+      main: '#EC4899',
+      light: '#F472B6',
+      bg: '#FCE7F3',
+    },
   },
 
   // Success (for correct answers)
@@ -151,4 +186,12 @@ export const lightTheme: Theme = {
 export const darkTheme: Theme = {
   ...lightTheme,
   isDark: true,
+};
+
+/**
+ * Get category color
+ */
+export const getCategoryColor = (category: string): { main: string; light: string; bg: string } => {
+  const categoryKey = category.toLowerCase() as keyof typeof colors.categories;
+  return colors.categories[categoryKey] || colors.categories.technology;
 };
