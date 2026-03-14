@@ -1,0 +1,73 @@
+{
+  "id": "argentina-milei-inflation-2024",
+  "title": "Argentina's Shock Therapy: Milei's Chainsaw Meets 200% Inflation",
+  "category": "economics",
+  "estimatedReadingTime": 13,
+  "createdAt": "2026-03-14T00:00:00Z",
+  "tags": ["economics", "Argentina", "inflation", "monetary policy", "austerity", "dollarization"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "In December 2023, Argentina elected Javier Milei—a libertarian economist who campaigned with a literal chainsaw, promising to 'dynamite' the central bank and dollarize the economy. He inherited 211% annual inflation, $45 billion in IMF debt, and foreign reserves so depleted the central bank was technically bankrupt. Within his first 100 days, Milei devalued the peso 54%, cut public spending by 30%, eliminated 13 government ministries, and allowed monthly inflation to spike to 25% before starting to decline. Poverty hit 57%, the highest in 20 years. And yet, his approval ratings remained above 50%. Argentina is conducting the most radical economic experiment in a major economy since shock therapy in 1990s Russia—and unlike Russia, it's happening in real-time with democratic consent. The question isn't just whether austerity can stop hyperinflation, but whether democracy can survive the pain required."
+    },
+    {
+      "type": "key_point",
+      "text": "Argentina's crisis is structural, not cyclical. Since 2001's default, Argentina has experienced chronic inflation, defaulted nine times, and cycled through Peronist and market-oriented governments that both failed. The core problem: spending exceeds revenue, the central bank prints money to cover deficits, inflation erodes savings and investment, and political coalitions block reforms because every sector has veto power over changes that hurt them. Agricultural exporters want free markets; unions want subsidies; retirees want pensions; provinces want transfers. Previous governments tried gradual adjustment and failed—inflation returned because the deficit persisted. Milei's bet is that only shock therapy—sudden, dramatic cuts that overwhelm political opposition—can break the cycle."
+    },
+    {
+      "type": "key_point",
+      "text": "The immediate measures were brutal: Milei devalued the peso from 366 to 800 per dollar overnight in December 2023, instantly making imports unaffordable but improving competitiveness. He cut energy and transport subsidies that had cost 4% of GDP, causing utility bills to quadruple. He froze public sector hiring and infrastructure projects. He negotiated with governors to reduce provincial spending in exchange for debt relief. The goal was fiscal balance—eliminating the deficit that forced money printing. By March 2024, Argentina achieved its first fiscal surplus in 16 years. The cost: real incomes fell 20%, poverty spiked, and small businesses collapsed. But monthly inflation, which hit 25% in December, dropped to 13% by February and 4% by July."
+    },
+    {
+      "type": "highlight",
+      "text": "The political survival of this program is the real puzzle. Previous governments that attempted austerity—Macri in 2016-2019, De la Rúa in 2001—collapsed amid protests and were voted out. Milei's approval remained stable despite poverty rates exceeding 50%. The explanation appears to be credibility through extremism: Milei's chainsaw theatrics and explicit warnings that 'there is no money' set expectations so low that any stabilization feels like progress. Where Macri promised gradual improvement and failed, Milei promised catastrophe, delivered it, and then claimed vindication as inflation began declining. It's political jujitsu—overpromising disaster means underperforming against expectations becomes a win."
+    },
+    {
+      "type": "key_point",
+      "text": "The dollarization plan—replacing the peso with the US dollar as official currency—remains Milei's long-term goal but faces enormous obstacles. Dollarization would eliminate the inflation tax (can't print dollars), impose fiscal discipline (no monetary financing of deficits), and potentially restore investment confidence. Ecuador and El Salvador use the dollar; both have lower inflation than Argentina. But dollarization requires dollar reserves Argentina doesn't have—an estimated $40 billion to swap pesos in circulation. The IMF, owed $45 billion, opposes dollarization because it complicates repayment. So Milei is attempting stabilization first—reduce inflation with fiscal discipline, build reserves, then dollarize once conditions permit. It's a multi-year bet that political support survives."
+    },
+    {
+      "type": "key_point",
+      "text": "The critics argue this is treating symptoms, not causes. Inflation came from deficits; deficits came from political fragmentation and distributive conflicts—exporters vs. workers, capital vs. provinces, creditors vs. debtors. Austerity can achieve fiscal balance temporarily, but without institutional reforms (tax collection, judicial independence, labor markets), the political economy that produced deficits will reassert itself. Every previous stabilization in Argentina lasted a few years before collapsing—1991's Convertibility Plan, 2016's Macri reforms. The optimistic view: Milei's radicalism creates space for deeper reforms. The pessimistic view: once inflation stabilizes, political opposition will block structural changes, deficits will return, and Argentina will repeat the cycle with worse institutions."
+    },
+    {
+      "type": "summary",
+      "text": "Milei's first year represents the most aggressive fiscal adjustment in a democracy in decades—30% spending cuts, 54% devaluation, poverty above 50%, and sustained political support. The immediate results are mixed: monthly inflation falling from 25% to 4% is genuine progress, but at the cost of a depression-level economic contraction. What makes Argentina's experiment significant globally is the combination of extremity and democratic mandate. This isn't an IMF-imposed program or authoritarian decree—it's an elected leader implementing textbook shock therapy with voter support. If Milei succeeds—stabilizes inflation, dollarizes, and builds institutions that prevent recurrence—it validates a model of democratic austerity that most economists thought politically impossible. If he fails, it suggests that even extreme mandates can't overcome Argentina's distributive conflicts, and that the country is structurally committed to inflationary cycles. Either way, the outcome will shape thinking about inflation stabilization in middle-income democracies for a generation. Right now, Argentina is proving you can cut spending 30% and retain political support—the harder question is whether you can build institutions that make those cuts permanent rather than just the prelude to the next crisis."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the core structural problem underlying Argentina's chronic inflation and debt crises?",
+      "options": [
+        "Argentina lacks natural resources to generate export revenue",
+        "Government spending exceeds revenue, leading to central bank money-printing to cover deficits, which causes inflation in a cycle that political fragmentation has prevented from being broken",
+        "Argentina's inflation is caused by external factors like global oil prices",
+        "The country has too many exports and too few imports"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Argentina's problem is structural: fiscal deficits require monetary financing (printing money), which causes inflation. Political fragmentation means every sector (unions, exporters, provinces, retirees) can block reforms that hurt them, preventing the spending cuts or tax increases needed to close deficits. This creates a cycle where stabilization efforts fail because the underlying fiscal problem persists."
+    },
+    {
+      "question": "Why has Milei's austerity program maintained political support despite causing poverty rates above 50%?",
+      "options": [
+        "Most Argentinians are wealthy enough that poverty doesn't affect them",
+        "Milei used authoritarian measures to suppress opposition",
+        "Milei's explicit warnings about catastrophe set expectations so low that falling inflation feels like progress, and his extremism created credibility that gradual reformers lacked",
+        "The austerity program hasn't actually caused any economic hardship"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Milei's political survival despite brutal economic pain appears to come from expectation management through extremism. By campaigning with a chainsaw and promising disaster, he set expectations so low that any stabilization (inflation dropping from 25% to 4% monthly) feels like vindication. Where gradual reformers like Macri promised improvement and failed, Milei promised catastrophe, delivered it, and claims success as things stabilize."
+    },
+    {
+      "question": "What are the main obstacles to Milei's goal of dollarizing Argentina's economy?",
+      "options": [
+        "The United States has refused to allow Argentina to use dollars",
+        "Argentina lacks the estimated $40 billion in dollar reserves needed to swap pesos in circulation, and the IMF opposes dollarization",
+        "Dollarization is illegal under Argentine constitutional law",
+        "The peso is currently stronger than the dollar"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dollarization requires sufficient dollar reserves to exchange all pesos in circulation—an estimated $40 billion that Argentina doesn't have. Additionally, the IMF, which Argentina owes $45 billion, opposes dollarization because it complicates repayment and eliminates monetary policy flexibility. Milei's strategy is to stabilize first, build reserves, then dollarize—a multi-year process requiring sustained political support."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "silicon-valley-bank-2023",
+  "title": "Silicon Valley Bank: How 72 Hours of Tweets Killed a $200B Bank",
+  "category": "finance",
+  "estimatedReadingTime": 13,
+  "createdAt": "2026-03-14T00:00:00Z",
+  "tags": ["finance", "banking", "venture capital", "bank runs", "interest rates", "systemic risk"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "On March 8, 2023, Silicon Valley Bank held $212 billion in assets and was the 16th-largest bank in America, serving half of all venture-backed startups. By March 10, it was insolvent, seized by regulators in the second-largest bank failure in US history. The collapse took 72 hours, triggered by $42 billion in withdrawal requests—25% of deposits—in a single day. The bank run wasn't driven by subprime mortgages or fraud; it was interest rate risk mismanagement plus social media-accelerated panic. SVB had invested deposits in long-term Treasury bonds when rates were near zero. When the Fed raised rates to fight inflation, bond values fell, creating unrealized losses of $16 billion. A failed capital raise to cover potential losses triggered VC firm warnings to portfolio companies to withdraw funds, which cascaded into Twitter-amplified panic and total collapse. The failure demonstrated how banks optimized for a low-rate world can disintegrate in hours when rates rise—and how social media turns classic bank runs into digital stampedes faster than regulators can intervene."
+    },
+    {
+      "type": "key_point",
+      "text": "SVB's business model was elegant but fragile. The bank served venture-backed startups and the VCs funding them, creating a concentrated deposit base. Startups deposited funding rounds (often millions at once); VCs kept operating accounts at SVB for convenience and network effects. This worked brilliantly in the 2010s low-rate environment: deposits flooded in from VC funding, SVB invested them in safe assets (Treasuries, mortgage-backed securities), and earned spread between deposit rates and investment yields. By 2022, SVB held $212 billion in assets, mostly long-term bonds bought when rates were near zero. The model's vulnerability: if rates rose sharply, bond values would fall (bond prices move inversely to yields), creating losses if SVB needed to sell. And if startup funding slowed, deposits would decline, forcing asset sales at exactly the wrong time."
+    },
+    {
+      "type": "key_point",
+      "text": "The Fed's rate hiking cycle exposed the mismatch. From March 2022 to March 2023, the Fed raised rates from 0.25% to 4.75%—the fastest tightening in 40 years. This crushed bond values: a 10-year Treasury bought at 1.5% yield in 2021 was worth 15-20% less when rates hit 4%. SVB's bond portfolio, marked at historical cost on the balance sheet, had $16 billion in unrealized losses by early 2023. Simultaneously, VC funding dried up as rates rose (startups are valued on discounted future cash flows—higher rates lower valuations), so companies drew down deposits instead of adding them. SVB faced declining deposits and asset values—a classic mismatch. The solution: sell bonds at a loss, raise capital to cover the hole, and stabilize. That's what SVB attempted March 8, announcing a $2.25 billion capital raise. It failed catastrophically."
+    },
+    {
+      "type": "highlight",
+      "text": "The collapse played out on Twitter in real-time, faster than any historical bank run. On March 8, after SVB announced the capital raise, prominent VCs including Peter Thiel's Founders Fund and Y Combinator advised portfolio companies to withdraw deposits as a precaution. These warnings spread on Twitter, startup Slack channels, and WhatsApp groups. By March 9, withdrawal requests hit $42 billion—a quarter of deposits—in a single day, far exceeding SVB's liquid reserves. The bank requested emergency assistance from the Fed; regulators assessed options overnight; and by March 10, the FDIC seized SVB, declaring it insolvent. From first VC warning to regulatory seizure: 72 hours. Compare this to historical bank runs that took weeks—the combination of digital banking (instant transfers), concentrated customer base (VCs coordinating), and social media (panic spreads at Twitter speed) meant the classic slow-motion bank run became a digital stampede."
+    },
+    {
+      "type": "key_point",
+      "text": "The systemic risk was contagion, not SVB itself. SVB held 3% of US banking assets—significant but not systemically critical. The danger was that its failure would trigger runs on other regional banks with similar profiles: concentrated deposit bases, unrealized losses on bond portfolios, and exposure to interest rate risk. Within days, First Republic Bank faced withdrawal pressure, and Signature Bank failed. The FDIC and Treasury invoked a 'systemic risk exception' on March 12, guaranteeing all SVB deposits (even above the $250k insurance limit) to prevent contagion. The message: we will not let this become 2008. The Fed also created a new facility (Bank Term Funding Program) allowing banks to borrow against bonds at par value instead of market value, eliminating forced sales that would realize losses. These interventions worked—contagion was contained—but they established a precedent: large uninsured depositors will be protected to prevent runs."
+    },
+    {
+      "type": "key_point",
+      "text": "The regulatory and management failures were glaring. SVB's chief risk officer position was vacant for eight months during the fastest rate-hiking cycle in decades—a basic governance failure. The bank didn't hedge its interest rate exposure despite holding $100+ billion in long-term bonds in a rising rate environment. Regulators, meanwhile, had classified SVB as a 'Category IV' bank under 2018 deregulation, exempting it from the strictest capital and liquidity requirements despite $200+ billion in assets. The 2018 law raised the threshold for enhanced supervision from $50 billion to $250 billion, and SVB lobbied for this change, arguing that banks below $250 billion didn't pose systemic risk. SVB's failure proved this assumption wrong—a $200 billion bank with concentrated risk can absolutely pose systemic risk. The deregulation didn't cause the failure, but it reduced oversight that might have caught the interest rate mismatch earlier."
+    },
+    {
+      "type": "summary",
+      "text": "Silicon Valley Bank's collapse in March 2023 was a combination of interest rate risk mismanagement, concentrated business model vulnerability, and social media-accelerated panic that turned a traditional bank run into a 72-hour digital stampede. The fundamentals were straightforward: SVB invested deposits in long-term bonds at low rates, the Fed hiked aggressively, bond values fell, and when the bank tried to raise capital to cover losses, VC warnings to withdraw deposits triggered a run that exceeded the bank's ability to meet. What makes this historically significant isn't the mechanics—banks have failed from interest rate mismatches before—but the speed. Twitter, startup networks, and digital banking compressed what would have been a week-long 1930s bank run into a single-day $42 billion withdrawal request that made failure inevitable. The FDIC's decision to guarantee all deposits (even uninsured) prevented contagion but established a precedent that undermines deposit insurance limits: if runs threaten systemic stability, uninsured depositors get protected anyway. This creates moral hazard—depositors don't need to assess bank safety if they know they'll be bailed out. The regulatory lesson is that the 2018 deregulation raising supervision thresholds from $50 billion to $250 billion created a gap where large regional banks like SVB could take concentrated risks without the strictest oversight. The operational lesson is that interest rate risk—traditionally considered boring compared to credit risk—can kill banks just as quickly when rates move fast, especially for institutions that didn't hedge. And the cultural lesson is that modern bank runs happen at social media speed, meaning regulators have hours, not days, to respond before collapse becomes inevitable. SVB's failure didn't trigger 2008-style contagion because authorities acted decisively with deposit guarantees and emergency lending, but it revealed fragilities in a banking system optimized for low rates suddenly confronting the fastest tightening in decades. Most banks survived; SVB didn't because its business model was uniquely exposed and its customer base uniquely coordinated. The question for future crises: will authorities always guarantee deposits to prevent runs, or was SVB special because tech industry systemic importance made contagion unacceptable? If the answer is 'always guarantee,' then deposit insurance limits are theater, and moral hazard is a feature, not a bug."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What core mismatch caused Silicon Valley Bank's insolvency?",
+      "options": [
+        "SVB made too many loans to risky cryptocurrency companies",
+        "SVB invested deposits in long-term bonds at low rates; when the Fed hiked rates rapidly, bond values fell creating $16 billion in unrealized losses, while declining startup funding reduced deposits—forcing asset sales at losses",
+        "SVB was the victim of a cyberattack that stole all customer funds",
+        "SVB's executives committed fraud similar to FTX"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SVB's failure was interest rate risk: the bank invested deposits in long-term Treasuries and mortgage bonds when rates were near zero. When the Fed hiked rates to 4.75%, bond values fell sharply (prices move inversely to yields). Simultaneously, VC funding dried up, so startups withdrew deposits instead of adding them. SVB faced declining deposits and falling asset values—a classic mismatch that required selling bonds at a loss and raising capital, which triggered the panic."
+    },
+    {
+      "question": "How did social media and digital banking accelerate SVB's collapse compared to historical bank runs?",
+      "options": [
+        "Social media had no impact on the bank run",
+        "VCs warned portfolio companies via Twitter, Slack, and WhatsApp; digital banking enabled instant transfers; and concentrated customer base allowed coordination—compressing a traditional week-long run into $42 billion in withdrawal requests in 24 hours",
+        "Historical bank runs were faster than SVB's collapse",
+        "Regulators used social media to slow the bank run"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SVB's collapse was unprecedented in speed: prominent VCs (Thiel's Founders Fund, Y Combinator) advised withdrawals on March 8-9; warnings spread via Twitter, startup networks, and messaging apps; digital banking allowed instant transfers; and SVB's concentrated customer base (VCs and their portfolio companies) could coordinate. This compressed what historically took weeks into a 72-hour digital stampede—$42 billion in withdrawal requests in a single day that made failure inevitable."
+    },
+    {
+      "question": "What precedent did the FDIC's decision to guarantee all SVB deposits (including uninsured) establish?",
+      "options": [
+        "Deposit insurance limits of $250k are strictly enforced in all situations",
+        "To prevent contagion, authorities will protect even uninsured depositors when systemic stability is threatened—which creates moral hazard by eliminating incentive to assess bank safety",
+        "Only insured deposits up to $250k were protected at SVB",
+        "The FDIC refused to protect any SVB depositors"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The FDIC invoked 'systemic risk exception' to guarantee all SVB deposits, even above $250k insurance limits, to prevent runs on other banks. This prevented contagion successfully but established precedent: if a failure threatens systemic stability, uninsured depositors get protected. This creates moral hazard—depositors don't need to assess bank safety if they expect bailouts, reducing market discipline on risk-taking."
+    }
+  ]
+}

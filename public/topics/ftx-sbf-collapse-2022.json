@@ -1,0 +1,73 @@
+{
+  "id": "ftx-sbf-collapse-2022",
+  "title": "FTX's Implosion: The $32 Billion Fraud That Fooled Everyone",
+  "category": "finance",
+  "estimatedReadingTime": 13,
+  "createdAt": "2026-03-14T00:00:00Z",
+  "tags": ["finance", "cryptocurrency", "fraud", "regulation", "venture capital", "effective altruism"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "In November 2022, FTX—the world's second-largest cryptocurrency exchange, valued at $32 billion just months earlier—collapsed in 72 hours. Its founder, Sam Bankman-Fried (SBF), went from being crypto's most respected voice, interviewed by Bloomberg and testifying before Congress, to facing federal fraud charges that could imprison him for decades. The unraveling was stunningly simple: FTX had lent $8 billion of customer funds to Alameda Research, SBF's trading firm, without disclosure or consent. When crypto markets crashed, Alameda couldn't repay, leaving an $8 billion hole in FTX's balance sheet. Customers tried to withdraw, discovered their money was gone, and the exchange collapsed. What makes this remarkable isn't the fraud—financial fraud is common—but who it fooled. Sequoia Capital, BlackRock, the Ontario Teachers' Pension Plan, and Singapore's sovereign wealth fund invested billions based on due diligence that somehow missed the obvious: FTX was commingling customer funds with proprietary trading, the most basic violation of exchange integrity. The question isn't just how SBF committed fraud—it's how he convinced the world's most sophisticated investors to ignore red flags visible to anyone who looked."
+    },
+    {
+      "type": "key_point",
+      "text": "The fraud was structurally straightforward. FTX was a cryptocurrency exchange—customers deposited funds, traded crypto, and could withdraw at any time. Alameda Research was SBF's proprietary trading firm, making leveraged bets on crypto markets. These should have been completely separate entities with independent finances. Instead, FTX allowed Alameda to borrow customer deposits without limits or disclosure, using them to make risky bets. When crypto prices crashed in 2022, Alameda's positions went underwater. The firm owed $8 billion it couldn't repay, meaning FTX customer deposits were simply gone. When customers tried withdrawing in November, FTX didn't have the funds. This isn't complex financial engineering—it's the crypto equivalent of a bank lending depositor money to the bank CEO's hedge fund and losing it. It's fraud so basic that regulatory frameworks were designed to prevent exactly this."
+    },
+    {
+      "type": "key_point",
+      "text": "The red flags were visible to anyone who looked. FTX's balance sheet, when eventually examined, showed that Alameda's largest asset was FTT—FTX's own exchange token that SBF had created. Alameda was collateralizing billions in borrowing with a token whose value depended on FTX's reputation—a circular dependency where the exchange backed the trading firm, which was backed by the exchange's token. Caroline Ellison, Alameda's CEO (and SBF's sometime girlfriend), later testified that SBF directed her to use customer funds when Alameda faced margin calls. Internal documents showed no separation between FTX and Alameda—they shared bank accounts, executives, and risk management. Due diligence by Sequoia and others somehow didn't discover what bankruptcy filings revealed in days: FTX was a house of cards built on commingled funds and circular collateral."
+    },
+    {
+      "type": "highlight",
+      "text": "The 'effective altruism' branding was central to the con. SBF positioned himself as crypto's responsible adult—advocating for regulation, donating billions to pandemic preparedness and political causes, and promoting 'earning to give': make money through crypto to fund global health initiatives. This narrative—that FTX was different, that SBF was in it for altruism, not greed—disarmed skepticism. Investors who might scrutinize a typical crypto bro accepted SBF because he claimed to be using wealth for good. He testified before Congress on crypto regulation while simultaneously running a fraud that violated the regulations he was advocating. The effective altruism community, which embraced him as a model, faced a reckoning: their philosophical framework had been exploited to legitimize fraud. SBF understood that moral branding provides cover—if you're seen as virtuous, people assume your business is too."
+    },
+    {
+      "type": "key_point",
+      "text": "The venture capital failure is harder to explain. Sequoia invested $214 million in FTX after due diligence that included meeting SBF and reviewing financials (supposedly). The firm later wrote down the investment to zero and published a mea culpa admitting they'd been deceived. But the deception wasn't sophisticated—it was basic misrepresentation. BlackRock, Temasek (Singapore's sovereign wealth fund), and Ontario Teachers collectively invested over $2 billion. These are institutions with armies of analysts whose job is to detect fraud. Yet none discovered the commingling until CoinDesk published a leaked balance sheet showing Alameda's FTT holdings. The explanation appears to be a mix of FOMO (fear of missing out on crypto gains), over-reliance on social proof (if Sequoia invested, it must be legitimate), and cognitive capture by SBF's narrative. The fraud succeeded because investors wanted to believe."
+    },
+    {
+      "type": "key_point",
+      "text": "The regulatory implications are profound. FTX wasn't a decentralized protocol—it was a centralized exchange holding customer funds, functionally identical to a securities brokerage. Yet it operated with minimal oversight because crypto regulation was fragmented and deliberately avoided. SBF lobbied against regulation that would have required segregation of customer funds—the exact safeguard that would have prevented his fraud. In November 2024, SBF was convicted on seven counts of fraud and conspiracy, sentenced to 25 years in prison. But the structural problem remains: crypto exchanges hold billions in customer assets with oversight far weaker than traditional finance. FTX's collapse didn't trigger regulatory overhaul—it triggered debates about whether crypto needs regulation, as if fraud being illegal in traditional finance but not crypto makes any sense."
+    },
+    {
+      "type": "summary",
+      "text": "FTX's collapse exposed multiple failures simultaneously: fraud by SBF, due diligence failures by elite investors, regulatory gaps in crypto oversight, and the exploitation of effective altruism branding for legitimacy. The fraud itself was simple—use customer deposits for proprietary trading, lose the money, collapse when customers withdraw. What's remarkable is how long it worked and who it fooled. Sequoia, BlackRock, and sovereign wealth funds invested billions in a company whose balance sheet would have failed undergraduate accounting scrutiny. The explanation isn't that these investors are incompetent—it's that they were cognitively captured by SBF's narrative of responsible crypto leadership and effective altruism, combined with FOMO in a booming market. The regulatory lesson is that financial fraud doesn't change because it's committed with cryptocurrency—commingling customer funds is fraud whether it's dollars or Bitcoin, and the absence of regulation doesn't make it acceptable. SBF's 25-year sentence provides accountability for this fraud, but it doesn't solve the structural problem: crypto operates with regulatory gaps that traditional finance closed after previous frauds. FTX is the 2022 version of 1920s bucket shops or 2000s Enron—fraud enabled by regulatory arbitrage and legitimized by sophisticated investors who should have known better. The industry's response—arguing that FTX was an outlier and doesn't justify regulation—is ahistorical. Every financial crisis triggers regulation because markets don't self-correct for fraud; they optimize for profit until regulators impose constraints. FTX lost $8 billion of customer money through basic fraud, and the world's most sophisticated investors missed it because they wanted to believe the fraud was legitimate. That's the lesson: due diligence fails when incentives favor belief over skepticism, and regulation exists because relying on market discipline doesn't prevent fraud—it just ensures fraud succeeds until it collapses spectacularly."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What was the fundamental fraud that caused FTX's collapse?",
+      "options": [
+        "FTX was hacked by external criminals who stole all customer funds",
+        "FTX lent $8 billion of customer deposits to SBF's trading firm Alameda Research without disclosure; when Alameda's bets failed, customer funds were gone",
+        "FTX invested customer funds in legitimate government bonds that lost value",
+        "Cryptocurrency prices declined, causing unavoidable losses"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The fraud was straightforward: FTX allowed Alameda Research to borrow customer deposits without limits or disclosure, using them for leveraged trading. When crypto markets crashed, Alameda's positions failed and it couldn't repay the $8 billion owed to FTX. This meant customer deposits were simply gone—classic fraud through commingling customer funds with proprietary trading, the exact violation that exchange regulations are designed to prevent."
+    },
+    {
+      "question": "How did SBF's 'effective altruism' branding contribute to the success of his fraud?",
+      "options": [
+        "Effective altruism is inherently fraudulent and always leads to scams",
+        "The moral branding disarmed skepticism—investors assumed someone claiming to earn money for charitable giving was virtuous and trustworthy, making them less likely to scrutinize the business",
+        "Effective altruism provided legal immunity from fraud prosecution",
+        "The philosophy required him to commit fraud"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SBF's positioning as crypto's responsible adult—advocating regulation, donating to causes, promoting 'earning to give'—created a halo effect. Investors who might scrutinize a typical crypto entrepreneur accepted SBF because he claimed altruistic motivations. The moral narrative provided cover: if you're seen as virtuous, people assume your business is ethical too. This cognitive bias allowed obvious red flags to be overlooked."
+    },
+    {
+      "question": "Why did sophisticated investors like Sequoia Capital and BlackRock fail to detect the fraud during due diligence?",
+      "options": [
+        "FTX used advanced encryption that made due diligence impossible",
+        "A combination of FOMO in a booming crypto market, over-reliance on social proof from other investors, and cognitive capture by SBF's narrative made them want to believe despite visible red flags",
+        "These firms intentionally invested in fraud as part of a criminal conspiracy",
+        "FTX was legally prohibited from disclosing its financial structure"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The due diligence failures appear to stem from motivated reasoning: FOMO (fear of missing crypto gains), social proof (if other elite firms invested, it must be legitimate), and cognitive capture by SBF's responsible-adult narrative. The red flags—commingled funds, circular collateral through FTT tokens, lack of fund segregation—were visible but overlooked because investors wanted to believe. It's not that they couldn't detect fraud; they didn't want to."
+    }
+  ]
+}

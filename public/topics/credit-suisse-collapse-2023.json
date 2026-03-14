@@ -1,0 +1,73 @@
+{
+  "id": "credit-suisse-collapse-2023",
+  "title": "Credit Suisse's Death Spiral: When a 167-Year Bank Dies in Days",
+  "category": "finance",
+  "estimatedReadingTime": 14,
+  "createdAt": "2026-03-14T00:00:00Z",
+  "tags": ["finance", "banking", "Switzerland", "financial crisis", "systemic risk", "bank runs"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "In March 2023, Credit Suisse—one of Switzerland's two 'too big to fail' banks, a 167-year institution managing $1.4 trillion in assets—collapsed in 72 hours. On March 15, the bank's largest shareholder (Saudi National Bank) announced it wouldn't provide additional capital. Depositors withdrew $10 billion per day; the stock fell 30%; and by March 19, Swiss regulators forced a merger with rival UBS for $3.25 billion—97% below Credit Suisse's peak value. This wasn't sudden crisis; it was the culmination of a decade of scandals, failures, and strategic incompetence. But the mechanism of death was modern: social media-accelerated bank run, confidence evaporation in real-time, and regulators discovering that 'too big to fail' doesn't mean 'guaranteed to survive'—it means 'will be merged at any price to prevent systemic collapse.' The failure reveals how even centuries-old institutions can disintegrate in days when confidence—the only thing holding banks together—evaporates faster than regulators can respond."
+    },
+    {
+      "type": "key_point",
+      "text": "Credit Suisse's decline was death by a thousand cuts. In 2021, the bank lost $5.5 billion when Archegos Capital, a family office using massive leverage, imploded—Credit Suisse was the only major bank that didn't exit positions in time. Months later, the collapse of Greensill Capital, a supply-chain finance firm, cost another $3 billion and revealed Credit Suisse had sold clients funds invested in Greensill without adequate due diligence. In 2022, a data leak revealed the bank had served corrupt officials and criminals for decades, violating money-laundering rules. By 2023, Credit Suisse had burned through three CEOs in four years, reported $7.9 billion in losses for 2022, and faced continuous outflows as clients lost trust. These weren't black swan events—they were serial failures of risk management, culture, and governance."
+    },
+    {
+      "type": "key_point",
+      "text": "The final crisis was triggered by contagion from Silicon Valley Bank (SVB). On March 10, 2023, SVB failed in the US—a mid-sized bank with poor risk management that faced a depositor run. SVB's failure was contained in the US, but it changed the narrative globally: if banks with liquidity problems can fail quickly, which other banks are vulnerable? Credit Suisse, already weakened, became the obvious target. On March 15, Saudi National Bank—CS's largest shareholder with 9.9% stake—stated it wouldn't invest more due to regulatory restrictions. This wasn't new information, but the timing was catastrophic: it signaled that even major shareholders were unwilling to support the bank. Depositors interpreted this as confirmation Credit Suisse was doomed. Withdrawals accelerated."
+    },
+    {
+      "type": "highlight",
+      "text": "The collapse played out in real-time on social media and trading apps, accelerating far beyond 20th-century bank run speeds. In 2008, Bear Stearns collapsed over several weeks as institutional clients withdrew. Credit Suisse lost $10 billion per day in deposits—wealth management clients moving money via mobile apps, hedge funds pulling prime brokerage assets, corporations shifting cash. The Swiss National Bank provided a $54 billion liquidity backstop on March 16, attempting to stabilize confidence. It didn't work. By March 19, Swiss regulators invoked emergency powers to force a merger: UBS would acquire Credit Suisse for $3.25 billion, with the Swiss government providing $9 billion in loss guarantees and the SNB providing $100 billion in liquidity. The alternative—allowing Credit Suisse to fail—risked contagion across European banking."
+    },
+    {
+      "type": "key_point",
+      "text": "The AT1 bondholders got wiped out in a decision that shocked markets. Additional Tier 1 (AT1) bonds are a form of bank debt that converts to equity or gets written down if capital falls below thresholds—they're meant to absorb losses before equity in resolution. But in the UBS merger, Swiss regulators wrote down $17 billion in AT1 bonds to zero while equity shareholders received $3.25 billion. This violated the traditional capital hierarchy where equity is wiped before bonds. The justification: this was a merger under emergency law, not bankruptcy, so normal rules didn't apply. The result: AT1 bonds globally sold off as investors realized they might not provide the protection they thought. It was a reminder that in crisis, authorities rewrite rules to achieve stability, and contractual seniority is aspirational rather than guaranteed."
+    },
+    {
+      "type": "key_point",
+      "text": "The UBS merger creates a Swiss banking monopoly with systemic risk implications. UBS now manages over $5 trillion in assets—more than twice Switzerland's GDP. If UBS fails, Switzerland lacks the resources to bail it out without international support. The merger solved the immediate crisis by preventing Credit Suisse's disorderly collapse, but it created a 'too big to save' problem: a single institution whose failure would be catastrophic but whose size exceeds the capacity of Swiss authorities to rescue. Swiss banking, historically built on stability and discretion, is now concentrated in one entity whose global operations create vulnerabilities that no single regulator controls. It's the opposite of the post-2008 goal to make banks smaller and more resilient."
+    },
+    {
+      "type": "summary",
+      "text": "Credit Suisse's collapse in March 2023 demonstrates how accumulated failures plus contagion triggers can destroy even systemically important institutions in days. The bank didn't fail from a single catastrophic loss—it died from a decade of scandals, risk management failures, and client trust erosion that left it vulnerable when SVB's failure shifted market narrative to 'which bank is next?' The mechanism of collapse was modern: mobile app-enabled withdrawals, social media-amplified panic, and confidence evaporation faster than regulators could respond. The $54 billion SNB liquidity facility was irrelevant because the problem wasn't liquidity—it was trust. No amount of central bank lending can save a bank when depositors believe it's doomed; the lending just gives them liquidity to facilitate withdrawals. The forced merger with UBS solved the immediate crisis but created long-term risks: Switzerland now has a banking sector dominated by one institution too large for the country to rescue independently. The AT1 bondholder wipeout, meanwhile, revealed that capital structures are rewritten in crises—seniority rules are suggestions that regulators ignore when politically convenient. The broader lesson is about confidence fragility in modern banking: institutions built over centuries can disintegrate in 72 hours when depositors have smartphones and believe failure is imminent. Regulation hasn't kept pace—'too big to fail' frameworks assume authorities have time to respond, but Credit Suisse collapsed faster than weekend regulatory meetings could convene. The post-2008 regulatory architecture prevented another Lehman-style contagion, but it didn't prevent Credit Suisse's failure—it just ensured the failure would be managed through forced merger rather than bankruptcy. That's progress, but it's not stability. Swiss banking survives, concentrated in UBS, with systemic risks deferred rather than resolved. Credit Suisse's 167-year history ended not with a bang but with a WhatsApp message to UBS: 'take our assets or we collapse by Monday.'"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What was the proximate trigger that caused Credit Suisse's final collapse in March 2023?",
+      "options": [
+        "Credit Suisse announced bankruptcy due to insolvency",
+        "Silicon Valley Bank's failure changed market narrative to 'which bank is next?', and Saudi National Bank's refusal to invest more confirmed Credit Suisse's vulnerability, triggering a depositor run",
+        "Swiss regulators discovered massive fraud at Credit Suisse",
+        "A cyberattack destroyed Credit Suisse's computer systems"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The final trigger was contagion from SVB's failure combined with Saudi National Bank's March 15 statement that it wouldn't provide more capital. SVB's collapse had shifted market narrative to identifying vulnerable banks. When CS's largest shareholder publicly refused further support, depositors interpreted it as confirmation the bank was doomed, accelerating withdrawals to $10 billion per day despite a $54 billion SNB liquidity backstop."
+    },
+    {
+      "question": "Why did the Swiss National Bank's $54 billion liquidity facility fail to stop the bank run?",
+      "options": [
+        "The amount was too small to matter",
+        "Credit Suisse refused to accept the liquidity",
+        "The problem was confidence, not liquidity—no amount of central bank lending can save a bank when depositors believe it's doomed; the lending just gives liquidity to facilitate withdrawals",
+        "International law prohibited Credit Suisse from using SNB funds"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The $54 billion liquidity facility addressed liquidity (ability to meet withdrawals) but not solvency or trust. When depositors believe a bank is doomed, central bank lending doesn't restore confidence—it just provides the bank with cash to honor withdrawal requests. Credit Suisse's problem was confidence collapse accelerated by social media and mobile banking, where trust evaporates faster than any amount of liquidity can solve."
+    },
+    {
+      "question": "What precedent did the AT1 bondholder wipeout establish, and why did it shock markets?",
+      "options": [
+        "It proved that AT1 bonds are always the safest investment in banking",
+        "Swiss regulators wrote down $17 billion in AT1 bonds to zero while equity shareholders received payment, violating traditional capital hierarchy and showing that crisis rules can override contractual seniority",
+        "AT1 bonds were converted to equity as they're designed to do",
+        "Bondholders were fully repaid before equity shareholders"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In traditional capital hierarchy, equity is wiped before bonds. But Swiss regulators wrote AT1 bonds to zero while equity shareholders received $3.25 billion, justified by claiming this was an emergency merger, not bankruptcy. This shocked markets because it revealed AT1 bonds don't necessarily provide the protection investors assumed—in crisis, authorities rewrite rules to achieve stability, and contractual seniority is negotiable rather than absolute."
+    }
+  ]
+}
