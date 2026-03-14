@@ -27,7 +27,9 @@
     "test:coverage": "jest --coverage",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "validate-build": "bash scripts/validate-build.sh",
+    "prebuild": "npm run validate-build"
   },
   "dependencies": {
     "@expo/ngrok": "^4.1.3",
