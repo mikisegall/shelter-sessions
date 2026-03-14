@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "lastUpdated": "2026-03-14T00:00:00Z",
+  "version": "2.0.0",
+  "lastUpdated": "2026-03-14T18:00:00Z",
   "topics": [
     {
       "id": "crispr-gene-editing",
@@ -36,6 +36,90 @@
       "title": "AI Alignment: When Claude Learns to Lie",
       "category": "technology",
       "addedDate": "2026-03-14T00:00:00Z"
+    },
+    {
+      "id": "ftx-sbf-collapse-2022",
+      "filename": "ftx-sbf-collapse-2022.json",
+      "title": "FTX Collapse: When Crypto's Golden Boy Lost $32 Billion",
+      "category": "finance",
+      "addedDate": "2026-03-14T18:00:00Z"
+    },
+    {
+      "id": "silicon-valley-bank-2023",
+      "filename": "silicon-valley-bank-2023.json",
+      "title": "Silicon Valley Bank: How a Bank Run Happened in 48 Hours",
+      "category": "finance",
+      "addedDate": "2026-03-14T18:00:00Z"
+    },
+    {
+      "id": "credit-suisse-collapse-2023",
+      "filename": "credit-suisse-collapse-2023.json",
+      "title": "Credit Suisse: The 167-Year-Old Bank That Died in a Weekend",
+      "category": "finance",
+      "addedDate": "2026-03-14T18:00:00Z"
+    },
+    {
+      "id": "argentina-milei-inflation-2024",
+      "filename": "argentina-milei-inflation-2024.json",
+      "title": "Argentina's Chainsaw President: Milei's Shock Therapy Experiment",
+      "category": "economics",
+      "addedDate": "2026-03-14T18:00:00Z"
+    },
+    {
+      "id": "gamestop-short-squeeze-2021",
+      "filename": "gamestop-short-squeeze-2021.json",
+      "title": "GameStop: When Reddit Traders Beat Wall Street at Its Own Game",
+      "category": "finance",
+      "addedDate": "2026-03-14T18:00:00Z"
+    },
+    {
+      "id": "china-property-evergrande-2024",
+      "filename": "china-property-evergrande-2024.json",
+      "title": "China's Property Crisis: Evergrande and the $300 Billion Unraveling",
+      "category": "economics",
+      "addedDate": "2026-03-14T18:00:00Z"
+    },
+    {
+      "id": "japan-yield-curve-2024",
+      "filename": "japan-yield-curve-2024.json",
+      "title": "Japan's Yield Curve Control: The End of Negative Interest Rates",
+      "category": "economics",
+      "addedDate": "2026-03-14T18:00:00Z"
+    },
+    {
+      "id": "saudi-china-petroyuan-2024",
+      "filename": "saudi-china-petroyuan-2024.json",
+      "title": "The Petroyuan: Saudi Arabia's Dollar Gambit",
+      "category": "geopolitics",
+      "addedDate": "2026-03-14T18:00:00Z"
+    },
+    {
+      "id": "wagner-africa-2023",
+      "filename": "wagner-africa-2023.json",
+      "title": "Wagner Group in Africa: Russia's Shadow Army After Prigozhin",
+      "category": "geopolitics",
+      "addedDate": "2026-03-14T18:00:00Z"
+    },
+    {
+      "id": "ukraine-grain-deal-2023",
+      "filename": "ukraine-grain-deal-2023.json",
+      "title": "Black Sea Grain Corridor: When Food Becomes a Weapon",
+      "category": "geopolitics",
+      "addedDate": "2026-03-14T18:00:00Z"
+    },
+    {
+      "id": "uk-pension-crisis-2022",
+      "filename": "uk-pension-crisis-2022.json",
+      "title": "UK Pension Crisis: Liz Truss's 49-Day Economic Catastrophe",
+      "category": "economics",
+      "addedDate": "2026-03-14T18:00:00Z"
+    },
+    {
+      "id": "armenia-azerbaijan-2023",
+      "filename": "armenia-azerbaijan-2023.json",
+      "title": "Nagorno-Karabakh: The Frozen Conflict That Melted in 24 Hours",
+      "category": "geopolitics",
+      "addedDate": "2026-03-14T18:00:00Z"
     }
   ]
 }
