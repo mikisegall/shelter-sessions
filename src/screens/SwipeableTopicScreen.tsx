@@ -7,7 +7,6 @@ import {
   SafeAreaView,
   TouchableOpacity,
   Dimensions,
-  useColorScheme,
   Platform,
   StatusBar as RNStatusBar,
 } from 'react-native';
@@ -19,30 +18,41 @@ import { colors, typography, spacing, borderRadius } from '../constants/theme';
 
 interface SwipeableTopicScreenProps {
   topic: Topic;
+  onComplete: (quizScore: number, quizTotal: number) => void;
+  isDarkMode: boolean;
+  onToggleDarkMode: () => void;
+  onBackToHome: () => void;
 }
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
 type CardItem =
-  | { type: 'intro'; index: number }
   | { type: 'content'; index: number }
   | { type: 'quiz'; index: number }
   | { type: 'summary'; index: number };
 
-export const SwipeableTopicScreen: React.FC<SwipeableTopicScreenProps> = ({ topic }) => {
-  const systemColorScheme = useColorScheme();
-  const [isDarkMode, setIsDarkMode] = useState(systemColorScheme === 'dark');
+export const SwipeableTopicScreen: React.FC<SwipeableTopicScreenProps> = ({
+  topic,
+  onComplete,
+  isDarkMode,
+  onToggleDarkMode,
+  onBackToHome,
+}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [quizScore, setQuizScore] = useState({ correct: 0, total: 0 });
   const flatListRef = useRef<FlatList>(null);
 
-  // Build card items array
+  // Build card items array - content blocks already include intro and summary
+  // Filter out summary from content blocks, it will be shown after quiz
+  const contentWithoutSummary = topic.contentBlocks.filter(block => block.type !== 'summary');
+  const summaryBlock = topic.contentBlocks.find(block => block.type === 'summary');
+
   const cards: CardItem[] = [
-    { type: 'intro', index: 0 },
-    ...topic.contentBlocks.map((_, i) => ({ type: 'content' as const, index: i })),
+    ...contentWithoutSummary.map((_, i) => ({ type: 'content' as const, index: i })),
     ...topic.quiz.map((_, i) => ({ type: 'quiz' as const, index: i })),
-    { type: 'summary', index: 0 },
+    ...(summaryBlock ? [{ type: 'summary' as const, index: 0 }] : []),
   ];
+
 
   const handleAnswer = (correct: boolean) => {
     setQuizScore((prev) => ({
@@ -51,44 +61,45 @@ export const SwipeableTopicScreen: React.FC<SwipeableTopicScreenProps> = ({ topi
     }));
   };
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
 
   const renderCard = ({ item }: { item: CardItem }) => {
-    if (item.type === 'intro') {
-      return (
-        <View style={styles.cardContainer}>
-          <View style={[styles.introCard, isDarkMode ? styles.cardDark : styles.cardLight]}>
-            <View style={[styles.categoryBadge, { backgroundColor: colors.primary.main }]}>
-              <Text style={styles.categoryText}>{topic.category.toUpperCase()}</Text>
-            </View>
-            <Text style={[styles.title, isDarkMode ? styles.textDark : styles.textLight]}>
-              {topic.title}
-            </Text>
-            <View style={styles.metaRow}>
-              <Text style={[styles.metaText, isDarkMode ? styles.textSecondaryDark : styles.textSecondaryLight]}>
-                📚 {topic.estimatedReadingTime} min
-              </Text>
-              <Text style={[styles.metaText, isDarkMode ? styles.textSecondaryDark : styles.textSecondaryLight]}>
-                {topic.contentBlocks.length} sections
-              </Text>
-              <Text style={[styles.metaText, isDarkMode ? styles.textSecondaryDark : styles.textSecondaryLight]}>
-                {topic.quiz.length} questions
-              </Text>
-            </View>
-            <Text style={[styles.swipeHint, isDarkMode ? styles.textSecondaryDark : styles.textSecondaryLight]}>
-              👉 Swipe to start
-            </Text>
-          </View>
-        </View>
-      );
-    }
-
     if (item.type === 'content') {
+      const block = contentWithoutSummary[item.index];
+
+      // Special rendering for intro block (first content block)
+      if (block.type === 'intro') {
+        return (
+          <View style={styles.cardContainer}>
+            <View style={[styles.introCard, isDarkMode ? styles.cardDark : styles.cardLight]}>
+              <View style={[styles.categoryBadge, { backgroundColor: colors.primary.main }]}>
+                <Text style={styles.categoryText}>{topic.category.toUpperCase()}</Text>
+              </View>
+              <Text style={[styles.title, isDarkMode ? styles.textDark : styles.textLight]}>
+                {topic.title}
+              </Text>
+              <View style={styles.metaRow}>
+                <Text style={[styles.metaText, isDarkMode ? styles.textSecondaryDark : styles.textSecondaryLight]}>
+                  📚 {topic.estimatedReadingTime} min
+                </Text>
+                <Text style={[styles.metaText, isDarkMode ? styles.textSecondaryDark : styles.textSecondaryLight]}>
+                  {topic.contentBlocks.length} sections
+                </Text>
+                <Text style={[styles.metaText, isDarkMode ? styles.textSecondaryDark : styles.textSecondaryLight]}>
+                  {topic.quiz.length} questions
+                </Text>
+              </View>
+              <Text style={[styles.swipeHint, isDarkMode ? styles.textSecondaryDark : styles.textSecondaryLight]}>
+                👉 Swipe to start
+              </Text>
+            </View>
+          </View>
+        );
+      }
+
+      // Regular content block
       return (
         <View style={styles.cardContainer}>
-          <ContentCard block={topic.contentBlocks[item.index]} isDark={isDarkMode} />
+          <ContentCard block={block} isDark={isDarkMode} />
         </View>
       );
     }
@@ -146,11 +157,12 @@ export const SwipeableTopicScreen: React.FC<SwipeableTopicScreenProps> = ({ topi
               </View>
             )}
 
-            <Text
-              style={[styles.summaryText, isDarkMode ? styles.textSecondaryDark : styles.textSecondaryLight]}
+            <TouchableOpacity
+              style={styles.backButton}
+              onPress={() => onComplete(quizScore.correct, quizScore.total)}
             >
-              More topics coming soon!
-            </Text>
+              <Text style={styles.backButtonText}>← Back to Home</Text>
+            </TouchableOpacity>
           </View>
         </View>
       );
@@ -165,7 +177,7 @@ export const SwipeableTopicScreen: React.FC<SwipeableTopicScreenProps> = ({ topi
     <SafeAreaView style={[styles.safeArea, { backgroundColor: bgColor }]}>
       <StatusBar style={isDarkMode ? 'light' : 'dark'} />
 
-      {/* Header with progress and dark mode toggle */}
+      {/* Header with back button, progress, and dark mode toggle */}
       <View
         style={[
           styles.header,
@@ -178,6 +190,10 @@ export const SwipeableTopicScreen: React.FC<SwipeableTopicScreenProps> = ({ topi
           },
         ]}
       >
+        <TouchableOpacity onPress={onBackToHome} style={styles.backButtonHeader}>
+          <Text style={styles.backButtonHeaderText}>← Home</Text>
+        </TouchableOpacity>
+
         <View style={styles.progressContainer}>
           <View style={styles.progressBar}>
             <View
@@ -195,7 +211,7 @@ export const SwipeableTopicScreen: React.FC<SwipeableTopicScreenProps> = ({ topi
           </Text>
         </View>
 
-        <TouchableOpacity onPress={toggleDarkMode} style={styles.darkModeButton}>
+        <TouchableOpacity onPress={onToggleDarkMode} style={styles.darkModeButton}>
           <Text style={styles.darkModeIcon}>{isDarkMode ? '☀️' : '🌙'}</Text>
         </TouchableOpacity>
       </View>
@@ -240,6 +256,15 @@ const styles = StyleSheet.create({
   headerDark: {
     backgroundColor: colors.dark.bg.secondary,
     borderBottomColor: colors.dark.border,
+  },
+  backButtonHeader: {
+    padding: spacing.sm,
+    marginRight: spacing.md,
+  },
+  backButtonHeaderText: {
+    color: colors.primary.main,
+    fontSize: typography.sizes.base,
+    fontWeight: typography.weights.semibold,
   },
   progressContainer: {
     flex: 1,
@@ -358,6 +383,18 @@ const styles = StyleSheet.create({
   summaryText: {
     fontSize: typography.sizes.base,
     textAlign: 'center',
+  },
+  backButton: {
+    backgroundColor: colors.primary.main,
+    paddingHorizontal: spacing.xl,
+    paddingVertical: spacing.base,
+    borderRadius: borderRadius.lg,
+    marginTop: spacing.base,
+  },
+  backButtonText: {
+    color: colors.neutral.white,
+    fontSize: typography.sizes.base,
+    fontWeight: typography.weights.semibold,
   },
   cardLight: {
     backgroundColor: colors.neutral.white,

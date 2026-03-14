@@ -117,7 +117,7 @@ export const QuizCard: React.FC<QuizCardProps> = ({
 const styles = StyleSheet.create({
   card: {
     width: CARD_WIDTH,
-    maxHeight: 600,
+    height: 600,
     borderRadius: borderRadius.lg,
     marginHorizontal: spacing.xl,
     overflow: 'hidden',
@@ -127,7 +127,6 @@ const styles = StyleSheet.create({
   },
   scrollContent: {
     padding: spacing.xl,
-    paddingBottom: spacing.xxl,
   },
   cardLight: {
     backgroundColor: colors.neutral.white,

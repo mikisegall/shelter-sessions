@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-14T00:00:00Z",
+  "topics": [
+    {
+      "id": "crispr-gene-editing",
+      "filename": "crispr-gene-editing.json",
+      "title": "How CRISPR Gene Editing Works",
+      "category": "science",
+      "addedDate": "2026-03-14T00:00:00Z"
+    },
+    {
+      "id": "lab-grown-meat-2024",
+      "filename": "lab-grown-meat.json",
+      "title": "Lab-Grown Meat: From FDA Approval to Your Plate",
+      "category": "technology",
+      "addedDate": "2026-03-14T00:00:00Z"
+    },
+    {
+      "id": "quantum-computing-2024",
+      "filename": "quantum-computing-debate.json",
+      "title": "Quantum Computing's Breakthrough—or Benchmarking Theater?",
+      "category": "technology",
+      "addedDate": "2026-03-14T00:00:00Z"
+    },
+    {
+      "id": "microplastics-health-2024",
+      "filename": "microplastics-health.json",
+      "title": "Microplastics in Your Brain: What We've Just Discovered",
+      "category": "science",
+      "addedDate": "2026-03-14T00:00:00Z"
+    },
+    {
+      "id": "ai-alignment-2024",
+      "filename": "ai-alignment-problem.json",
+      "title": "AI Alignment: When Claude Learns to Lie",
+      "category": "technology",
+      "addedDate": "2026-03-14T00:00:00Z"
+    }
+  ]
+}

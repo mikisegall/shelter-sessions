@@ -1,0 +1,107 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440002",
+  "title": "The Story Behind Git's Creation",
+  "category": "technology",
+  "estimatedReadingTime": 11,
+  "createdAt": "2026-03-14T08:00:00Z",
+  "tags": ["software", "programming", "linux", "history"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "Every day, millions of developers use Git to manage their code. But this essential tool was born out of necessity and controversy in 2005, created in just two weeks by Linus Torvalds - the same person who created Linux. The story involves corporate drama, a broken partnership, and one programmer's frustration with existing tools."
+    },
+    {
+      "type": "key_point",
+      "text": "Before Git, the Linux kernel - one of the largest open-source projects - used a proprietary system called BitKeeper. The company behind BitKeeper had provided free licenses to open-source developers. But in 2005, they revoked this access after claiming someone had reverse-engineered their software."
+    },
+    {
+      "type": "highlight",
+      "text": "Linus Torvalds was suddenly without a version control system for Linux. Frustrated with alternatives like CVS and Subversion, he decided to build his own tool. Remarkably, he had a working prototype in just a few days and a self-hosting system within two weeks."
+    },
+    {
+      "type": "detail",
+      "text": "Git's design philosophy was revolutionary: it's distributed rather than centralized. Every developer has the complete history of the project on their machine. This means you can work offline, commit changes, create branches, and view history without connecting to a server. Only when you're ready do you 'push' your changes to share them."
+    },
+    {
+      "type": "example",
+      "text": "Think of Git like multiple people editing a shared document, but instead of everyone fighting over one copy, each person has their own complete copy. They can make changes independently, then merge them back together. Git intelligently tracks what changed, who changed it, and when - making it easy to understand and undo changes."
+    },
+    {
+      "type": "key_point",
+      "text": "Three core concepts make Git powerful: commits (snapshots of your code), branches (parallel versions of your code), and merges (combining different branches). This branching model lets developers experiment freely without breaking the main codebase."
+    },
+    {
+      "type": "detail",
+      "text": "GitHub, launched in 2008, supercharged Git's adoption by adding a social layer. It made Git accessible to non-experts and created a culture of open-source collaboration. GitHub didn't invent Git, but it made Git the standard. Microsoft acquired GitHub in 2018 for $7.5 billion, recognizing its central role in modern software development."
+    },
+    {
+      "type": "highlight",
+      "text": "Git's name has a humble origin. In British slang, 'git' means an unpleasant person. Torvalds joked that he names his projects after himself: first Linux (Linus), now Git. The official explanation is more boring: 'git' can stand for 'Global Information Tracker' or 'Goddamn Idiotic Truckload of sh*t,' depending on your mood."
+    },
+    {
+      "type": "detail",
+      "text": "Git's impact extends far beyond code. It's used for writing books, designing circuits, creating art, managing legal documents, and even tracking changes to government legislation. Any project that evolves over time and needs to track who changed what can benefit from Git."
+    },
+    {
+      "type": "summary",
+      "text": "What started as Linus Torvalds' weekend project to solve his immediate problem became the foundation of modern software development. Git powers everything from one-person side projects to massive collaborations involving thousands of contributors. Its distributed nature and powerful branching model changed not just how we manage code, but how we think about collaborative work."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why did Linus Torvalds create Git?",
+      "options": [
+        "He wanted to start a company",
+        "Linux lost access to BitKeeper",
+        "He was bored and wanted a challenge",
+        "GitHub paid him to build it"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In 2005, BitKeeper revoked free access for open-source developers, leaving Linux without a version control system. Frustrated with existing alternatives, Torvalds built Git as a solution."
+    },
+    {
+      "question": "What makes Git 'distributed' rather than centralized?",
+      "options": [
+        "It runs on multiple servers",
+        "It's faster than other systems",
+        "Every developer has the complete project history",
+        "It uses cloud storage"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Git is distributed because every developer's machine contains the full history of the project. This allows working offline and makes the system more resilient - there's no single point of failure."
+    },
+    {
+      "question": "How long did it take Torvalds to create a working prototype of Git?",
+      "options": [
+        "Two years",
+        "Six months",
+        "Two weeks",
+        "One day"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Torvalds had a working prototype in just a few days and a self-hosting system within two weeks. This rapid development is legendary in programming circles."
+    },
+    {
+      "question": "What company acquired GitHub in 2018?",
+      "options": [
+        "Google",
+        "Facebook",
+        "Microsoft",
+        "Amazon"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Microsoft acquired GitHub for $7.5 billion in 2018, recognizing its crucial role in modern software development and the developer community."
+    },
+    {
+      "question": "What is a 'branch' in Git?",
+      "options": [
+        "A backup of your code",
+        "A parallel version of your code",
+        "A connection to GitHub",
+        "A type of file"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A branch is a parallel version of your code where you can experiment and make changes without affecting the main codebase. This makes it safe to try new features or fix bugs."
+    }
+  ]
+}
