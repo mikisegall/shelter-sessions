@@ -1,0 +1,49 @@
+{
+  "permissions": {
+    "bash": {
+      "allowed": [
+        "npm install",
+        "npm install --save",
+        "npm install --save-dev",
+        "npm run *",
+        "npm start",
+        "npm test",
+        "npm run android",
+        "npm run ios",
+        "npx expo *",
+        "npx react-native *",
+        "git status",
+        "git diff",
+        "git diff --staged",
+        "git log",
+        "git log --oneline",
+        "git branch",
+        "git add *",
+        "git commit *",
+        "git push",
+        "git pull",
+        "git checkout *",
+        "ls",
+        "ls -la",
+        "pwd",
+        "mkdir *",
+        "chmod +x *",
+        "adb devices",
+        "adb logcat"
+      ],
+      "blocked": [
+        "rm -rf /",
+        "rm -rf *",
+        "sudo *",
+        "curl * | bash",
+        "wget * | bash"
+      ]
+    }
+  },
+  "hooks": {
+    "enabled": true
+  },
+  "model": {
+    "default": "sonnet"
+  }
+}
