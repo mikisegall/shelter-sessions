@@ -26,12 +26,14 @@ import { DebugScreen } from './DebugScreen';
 
 interface HomeScreenProps {
   onStartSession: (topic: Topic) => void;
+  onBrowseTopics: () => void;
   isDarkMode: boolean;
   onToggleDarkMode: () => void;
 }
 
 export const HomeScreen: React.FC<HomeScreenProps> = ({
   onStartSession,
+  onBrowseTopics,
   isDarkMode,
   onToggleDarkMode,
 }) => {
@@ -244,6 +246,16 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
           </Text>
         </TouchableOpacity>
 
+        {/* Browse topics button */}
+        <TouchableOpacity
+          style={[styles.browseButton, isDarkMode ? styles.browseButtonDark : styles.browseButtonLight]}
+          onPress={onBrowseTopics}
+        >
+          <Text style={[styles.browseButtonText, { color: colors.primary.main }]}>
+            📚 Browse All Topics
+          </Text>
+        </TouchableOpacity>
+
         {/* Start session button */}
         <TouchableOpacity
           style={[
@@ -254,7 +266,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
           disabled={availableCount === 0}
         >
           <Text style={styles.startButtonText}>
-            {availableCount === 0 ? 'All Topics Completed!' : 'Start New Session'}
+            {availableCount === 0 ? 'All Topics Completed!' : 'Start Random Session'}
           </Text>
           {availableCount > 0 && <Text style={styles.startButtonIcon}>→</Text>}
         </TouchableOpacity>
@@ -415,6 +427,25 @@ const styles = StyleSheet.create({
     backgroundColor: colors.dark.bg.tertiary,
   },
   syncButtonText: {
+    fontSize: typography.sizes.base,
+    fontWeight: typography.weights.semibold,
+    textAlign: 'center',
+  },
+  browseButton: {
+    padding: spacing.base,
+    borderRadius: borderRadius.md,
+    marginBottom: spacing.md,
+    borderWidth: 1,
+  },
+  browseButtonLight: {
+    borderColor: colors.primary.main,
+    backgroundColor: colors.primary.bg,
+  },
+  browseButtonDark: {
+    borderColor: colors.primary.light,
+    backgroundColor: colors.dark.bg.tertiary,
+  },
+  browseButtonText: {
     fontSize: typography.sizes.base,
     fontWeight: typography.weights.semibold,
     textAlign: 'center',
