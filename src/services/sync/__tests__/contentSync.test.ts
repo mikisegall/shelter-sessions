@@ -16,6 +16,16 @@ jest.mock('@react-native-async-storage/async-storage', () => ({
 // Mock fetch
 global.fetch = jest.fn();
 
+// Mock TOPIC_LIBRARY
+jest.mock('../../../constants/topicLibrary', () => ({
+  TOPIC_LIBRARY: [
+    { id: 'bundled-1', title: 'Bundled Topic 1' },
+    { id: 'bundled-2', title: 'Bundled Topic 2' },
+  ],
+  getTopicLibrary: jest.fn(),
+  saveDownloadedTopics: jest.fn(),
+}));
+
 const mockManifest = {
   version: '1.0.0',
   lastUpdated: '2026-03-14T00:00:00Z',
@@ -189,9 +199,15 @@ describe('contentSync', () => {
       expect(result.newTopics[0].id).toBe('test-topic-1');
       expect(result.newTopics[1].id).toBe('test-topic-2');
       expect(result.totalAvailable).toBe(2);
+
+      // First call initializes bundled topics, second adds new topics
       expect(AsyncStorage.setItem).toHaveBeenCalledWith(
         '@shelter_sessions:synced_topics',
-        JSON.stringify(['test-topic-1', 'test-topic-2'])
+        expect.stringContaining('bundled-1')
+      );
+      expect(AsyncStorage.setItem).toHaveBeenCalledWith(
+        '@shelter_sessions:synced_topics',
+        expect.stringContaining('test-topic-1')
       );
       expect(AsyncStorage.setItem).toHaveBeenCalledWith(
         '@shelter_sessions:last_sync',

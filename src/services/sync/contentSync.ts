@@ -133,23 +133,38 @@ const saveLastSyncTime = async (): Promise<void> => {
  */
 export const syncTopics = async (): Promise<SyncResult> => {
   try {
+    // Import bundled topics to get their IDs
+    const { TOPIC_LIBRARY } = await import('../../constants/topicLibrary');
+    const bundledTopicIds = TOPIC_LIBRARY.map((t) => t.id);
+
     // Fetch manifest
     const manifest = await fetchManifest();
 
     // Get already synced topics
-    const syncedIds = await getSyncedTopicIds();
+    let syncedIds = await getSyncedTopicIds();
 
-    // Find new topics
+    // On first sync, mark bundled topics as already synced
+    // This prevents re-downloading topics we already have bundled
+    if (syncedIds.length === 0) {
+      syncedIds = bundledTopicIds;
+      await saveSyncedTopicIds(bundledTopicIds);
+      console.log(`Initialized sync with ${bundledTopicIds.length} bundled topics`);
+    }
+
+    // Find new topics (not bundled and not already synced)
     const newTopicManifests = manifest.topics.filter(
       (t) => !syncedIds.includes(t.id)
     );
 
     // Download new topics
+    console.log(`Found ${newTopicManifests.length} new topics to download`);
     const newTopics: Topic[] = [];
     for (const topicManifest of newTopicManifests) {
       try {
+        console.log(`Downloading topic: ${topicManifest.id} (${topicManifest.filename})`);
         const topic = await fetchTopic(topicManifest.filename);
         newTopics.push(topic);
+        console.log(`✓ Downloaded: ${topic.title}`);
       } catch (error) {
         console.error(`Failed to download topic ${topicManifest.id}:`, error);
       }
@@ -161,9 +176,12 @@ export const syncTopics = async (): Promise<SyncResult> => {
       ...newTopics.map((t) => t.id),
     ];
     await saveSyncedTopicIds(allSyncedIds);
+    console.log(`Synced IDs updated: ${allSyncedIds.length} total`);
 
     // Save last sync time
     await saveLastSyncTime();
+
+    console.log(`Sync complete: ${newTopics.length} new topics, ${manifest.topics.length} total available`);
 
     return {
       newTopics,

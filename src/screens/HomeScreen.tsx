@@ -22,6 +22,7 @@ import {
   saveDownloadedTopics,
 } from '../constants/topicLibrary';
 import { syncTopics, shouldSync } from '../services/sync/contentSync';
+import { DebugScreen } from './DebugScreen';
 
 interface HomeScreenProps {
   onStartSession: (topic: Topic) => void;
@@ -39,6 +40,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
   const [availableCount, setAvailableCount] = useState(0);
   const [isSyncing, setIsSyncing] = useState(false);
   const [newTopicsCount, setNewTopicsCount] = useState(0);
+  const [showDebug, setShowDebug] = useState(false);
 
   useEffect(() => {
     loadStats();
@@ -81,18 +83,27 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
 
   const handleSync = async () => {
     setIsSyncing(true);
+    console.log('=== SYNC STARTED ===');
     try {
       const result = await syncTopics();
+      console.log(`Sync result: ${result.newTopics.length} new topics`);
+
       if (result.newTopics.length > 0) {
+        console.log('Saving downloaded topics to storage...');
         await saveDownloadedTopics(result.newTopics);
         setNewTopicsCount(result.newTopics.length);
+        console.log('Reloading stats...');
         await loadStats(); // Refresh counts
+        console.log('Stats reloaded');
+      } else {
+        console.log('No new topics to download');
       }
     } catch (error) {
       console.error('Sync failed:', error);
       // Silently fail - user is offline
     } finally {
       setIsSyncing(false);
+      console.log('=== SYNC COMPLETE ===');
     }
   };
 
@@ -123,6 +134,10 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
     ? colors.dark.text.secondary
     : colors.neutral.text.secondary;
 
+  if (showDebug) {
+    return <DebugScreen onClose={() => setShowDebug(false)} isDarkMode={isDarkMode} />;
+  }
+
   return (
     <SafeAreaView style={[styles.safeArea, { backgroundColor: bgColor }]}>
       <StatusBar style={isDarkMode ? 'light' : 'dark'} />
@@ -140,6 +155,16 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
         <TouchableOpacity onPress={onToggleDarkMode} style={styles.darkModeButton}>
           <Text style={styles.darkModeIcon}>{isDarkMode ? '☀️' : '🌙'}</Text>
         </TouchableOpacity>
+
+        {/* Debug button (dev only) */}
+        {__DEV__ && (
+          <TouchableOpacity
+            onPress={() => setShowDebug(true)}
+            style={styles.debugButton}
+          >
+            <Text style={styles.debugIcon}>🔍</Text>
+          </TouchableOpacity>
+        )}
 
         {/* App branding */}
         <View style={styles.brandingContainer}>
@@ -274,6 +299,16 @@ const styles = StyleSheet.create({
   },
   darkModeIcon: {
     fontSize: 28,
+  },
+  debugButton: {
+    position: 'absolute',
+    top: Platform.OS === 'android' ? (RNStatusBar.currentHeight || 0) + spacing.md + 40 : spacing.md + 40,
+    right: spacing.xl,
+    padding: spacing.sm,
+    zIndex: 10,
+  },
+  debugIcon: {
+    fontSize: 24,
   },
   brandingContainer: {
     alignItems: 'center',
