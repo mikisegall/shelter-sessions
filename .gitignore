@@ -11,6 +11,13 @@ yarn-error.log
 .expo-shared/
 dist/
 web-build/
+expo-env.d.ts
+
+# Metro
+.metro-health-check*
+
+# Kotlin
+.kotlin/
 
 # React Native
 .vscode/
