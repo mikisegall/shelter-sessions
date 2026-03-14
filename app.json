@@ -25,10 +25,16 @@
       "permissions": [
         "INTERNET",
         "ACCESS_NETWORK_STATE"
-      ]
+      ],
+      "package": "com.miki.segall.sheltersessions"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1c9836b1-561f-4693-91dc-762d9f3caca7"
+      }
     }
   }
 }

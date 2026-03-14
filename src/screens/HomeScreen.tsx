@@ -153,123 +153,115 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
           },
         ]}
       >
-        {/* Dark mode toggle */}
-        <TouchableOpacity onPress={onToggleDarkMode} style={styles.darkModeButton}>
-          <Text style={styles.darkModeIcon}>{isDarkMode ? '☀️' : '🌙'}</Text>
-        </TouchableOpacity>
-
-        {/* Debug button (dev only) */}
-        {__DEV__ && (
-          <TouchableOpacity
-            onPress={() => setShowDebug(true)}
-            style={styles.debugButton}
-          >
-            <Text style={styles.debugIcon}>🔍</Text>
-          </TouchableOpacity>
-        )}
-
-        {/* App branding */}
-        <View style={styles.brandingContainer}>
-          <Text style={[styles.appIcon]}>📚</Text>
-          <Text style={[styles.appTitle, { color: textColor }]}>Shelter Sessions</Text>
-          <Text style={[styles.appSubtitle, { color: secondaryTextColor }]}>
-            Learn something new in 15 minutes
-          </Text>
+        {/* Header with dark mode and debug */}
+        <View style={styles.header}>
+          <View style={styles.headerLeft}>
+            <Text style={[styles.appTitle, { color: textColor }]}>Shelter Sessions</Text>
+          </View>
+          <View style={styles.headerRight}>
+            {__DEV__ && (
+              <TouchableOpacity onPress={() => setShowDebug(true)} style={styles.iconButton}>
+                <Text style={styles.iconButtonText}>🔍</Text>
+              </TouchableOpacity>
+            )}
+            <TouchableOpacity onPress={onToggleDarkMode} style={styles.iconButton}>
+              <Text style={styles.iconButtonText}>{isDarkMode ? '☀️' : '🌙'}</Text>
+            </TouchableOpacity>
+          </View>
         </View>
 
-        {/* Stats display */}
-        {stats && (
-          <View style={styles.statsContainer}>
-            <View
-              style={[
-                styles.statCard,
-                isDarkMode ? styles.statCardDark : styles.statCardLight,
-              ]}
-            >
-              <Text style={[styles.statNumber, { color: colors.primary.main }]}>
-                {completedCount}
-              </Text>
-              <Text style={[styles.statLabel, { color: secondaryTextColor }]}>
-                Topics Completed
-              </Text>
-            </View>
+        {/* Hero Section */}
+        <View style={styles.heroContainer}>
+          <Text style={[styles.heroIcon]}>📚</Text>
+          <Text style={[styles.heroTitle, { color: textColor }]}>
+            Learn in 15 minutes
+          </Text>
 
-            <View
-              style={[
-                styles.statCard,
-                isDarkMode ? styles.statCardDark : styles.statCardLight,
-              ]}
-            >
-              <Text style={[styles.statNumber, { color: colors.secondary.main }]}>
-                {availableCount}
-              </Text>
-              <Text style={[styles.statLabel, { color: secondaryTextColor }]}>
-                Topics Available
-              </Text>
-            </View>
-
-            {stats.totalQuizQuestions > 0 && (
-              <View
-                style={[
-                  styles.statCard,
-                  styles.statCardWide,
-                  isDarkMode ? styles.statCardDark : styles.statCardLight,
-                ]}
-              >
-                <Text style={[styles.statNumber, { color: colors.success.main }]}>
-                  {Math.round((stats.totalQuizScore / stats.totalQuizQuestions) * 100)}%
+          {/* Compact stats row */}
+          {stats && (
+            <View style={styles.statsRow}>
+              <View style={styles.statItem}>
+                <Text style={[styles.statValue, { color: colors.primary.main }]}>
+                  {completedCount}
                 </Text>
-                <Text style={[styles.statLabel, { color: secondaryTextColor }]}>
-                  Quiz Accuracy
-                </Text>
+                <Text style={[styles.statText, { color: secondaryTextColor }]}>read</Text>
               </View>
-            )}
-          </View>
-        )}
+              <View style={styles.statDivider} />
+              <View style={styles.statItem}>
+                <Text style={[styles.statValue, { color: colors.secondary.main }]}>
+                  {availableCount}
+                </Text>
+                <Text style={[styles.statText, { color: secondaryTextColor }]}>available</Text>
+              </View>
+              {stats.totalQuizQuestions > 0 && (
+                <>
+                  <View style={styles.statDivider} />
+                  <View style={styles.statItem}>
+                    <Text style={[styles.statValue, { color: colors.success.main }]}>
+                      {Math.round((stats.totalQuizScore / stats.totalQuizQuestions) * 100)}%
+                    </Text>
+                    <Text style={[styles.statText, { color: secondaryTextColor }]}>accuracy</Text>
+                  </View>
+                </>
+              )}
+            </View>
+          )}
+        </View>
 
-        {/* Sync button */}
-        {newTopicsCount > 0 && (
-          <View style={styles.syncNotification}>
-            <Text style={[styles.syncNotificationText, { color: secondaryTextColor }]}>
-              🎉 {newTopicsCount} new topic{newTopicsCount > 1 ? 's' : ''} downloaded!
+        {/* Action buttons - simplified */}
+        <View style={styles.actionsContainer}>
+          {/* Primary action */}
+          <TouchableOpacity
+            style={[
+              styles.primaryButton,
+              availableCount === 0 && styles.primaryButtonDisabled,
+            ]}
+            onPress={handleStartSession}
+            disabled={availableCount === 0}
+          >
+            <Text style={styles.primaryButtonText}>
+              {availableCount === 0 ? 'All Topics Complete!' : 'Start Session'}
             </Text>
+            {availableCount > 0 && <Text style={styles.primaryButtonIcon}>→</Text>}
+          </TouchableOpacity>
+
+          {/* Secondary actions */}
+          <View style={styles.secondaryActions}>
+            <TouchableOpacity
+              style={[
+                styles.secondaryButton,
+                isDarkMode ? styles.secondaryButtonDark : styles.secondaryButtonLight,
+              ]}
+              onPress={onBrowseTopics}
+            >
+              <Text style={[styles.secondaryButtonText, { color: textColor }]}>
+                Browse Topics
+              </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={[
+                styles.secondaryButton,
+                isDarkMode ? styles.secondaryButtonDark : styles.secondaryButtonLight,
+              ]}
+              onPress={handleSync}
+              disabled={isSyncing}
+            >
+              <Text style={[styles.secondaryButtonText, { color: textColor }]}>
+                {isSyncing ? 'Syncing...' : 'Sync'}
+              </Text>
+            </TouchableOpacity>
           </View>
-        )}
 
-        <TouchableOpacity
-          style={[styles.syncButton, isDarkMode ? styles.syncButtonDark : styles.syncButtonLight]}
-          onPress={handleSync}
-          disabled={isSyncing}
-        >
-          <Text style={[styles.syncButtonText, { color: colors.primary.main }]}>
-            {isSyncing ? '⏳ Syncing...' : '🔄 Check for New Topics'}
-          </Text>
-        </TouchableOpacity>
-
-        {/* Browse topics button */}
-        <TouchableOpacity
-          style={[styles.browseButton, isDarkMode ? styles.browseButtonDark : styles.browseButtonLight]}
-          onPress={onBrowseTopics}
-        >
-          <Text style={[styles.browseButtonText, { color: colors.primary.main }]}>
-            📚 Browse All Topics
-          </Text>
-        </TouchableOpacity>
-
-        {/* Start session button */}
-        <TouchableOpacity
-          style={[
-            styles.startButton,
-            availableCount === 0 && styles.startButtonDisabled,
-          ]}
-          onPress={handleStartSession}
-          disabled={availableCount === 0}
-        >
-          <Text style={styles.startButtonText}>
-            {availableCount === 0 ? 'All Topics Completed!' : 'Start Random Session'}
-          </Text>
-          {availableCount > 0 && <Text style={styles.startButtonIcon}>→</Text>}
-        </TouchableOpacity>
+          {/* Sync notification */}
+          {newTopicsCount > 0 && (
+            <View style={styles.notification}>
+              <Text style={[styles.notificationText, { color: colors.success.main }]}>
+                🎉 {newTopicsCount} new topic{newTopicsCount > 1 ? 's' : ''} available
+              </Text>
+            </View>
+          )}
+        </View>
 
         {/* Reset progress (for testing) */}
         {__DEV__ && completedCount > 0 && (
@@ -284,7 +276,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
             }}
           >
             <Text style={[styles.resetButtonText, { color: secondaryTextColor }]}>
-              Reset Progress (Dev Only)
+              Reset Progress
             </Text>
           </TouchableOpacity>
         )}
@@ -300,81 +292,73 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: spacing.xl,
-    justifyContent: 'center',
   },
-  darkModeButton: {
-    position: 'absolute',
-    top: Platform.OS === 'android' ? (RNStatusBar.currentHeight || 0) + spacing.md : spacing.md,
-    right: spacing.xl,
-    padding: spacing.sm,
-    zIndex: 10,
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: spacing.base,
+    marginBottom: spacing.xl,
   },
-  darkModeIcon: {
-    fontSize: 28,
+  headerLeft: {
+    flex: 1,
   },
-  debugButton: {
-    position: 'absolute',
-    top: Platform.OS === 'android' ? (RNStatusBar.currentHeight || 0) + spacing.md + 40 : spacing.md + 40,
-    right: spacing.xl,
-    padding: spacing.sm,
-    zIndex: 10,
+  headerRight: {
+    flexDirection: 'row',
+    gap: spacing.sm,
   },
-  debugIcon: {
+  iconButton: {
+    padding: spacing.xs,
+  },
+  iconButtonText: {
     fontSize: 24,
   },
-  brandingContainer: {
-    alignItems: 'center',
-    marginBottom: spacing.xxl * 2,
-  },
-  appIcon: {
-    fontSize: 64,
-    marginBottom: spacing.base,
-  },
   appTitle: {
-    fontSize: typography.sizes.heading,
+    fontSize: typography.sizes.xl,
     fontWeight: typography.weights.bold,
-    marginBottom: spacing.sm,
   },
-  appSubtitle: {
-    fontSize: typography.sizes.base,
+  heroContainer: {
+    alignItems: 'center',
+    paddingVertical: spacing.xxl * 2,
+  },
+  heroIcon: {
+    fontSize: 72,
+    marginBottom: spacing.lg,
+  },
+  heroTitle: {
+    fontSize: typography.sizes.title,
+    fontWeight: typography.weights.bold,
+    marginBottom: spacing.xl,
     textAlign: 'center',
   },
-  statsContainer: {
+  statsRow: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    gap: spacing.base,
-    marginBottom: spacing.xxl,
+    alignItems: 'center',
+    gap: spacing.lg,
+    marginTop: spacing.base,
   },
-  statCard: {
-    width: '45%',
-    padding: spacing.lg,
-    borderRadius: borderRadius.md,
+  statItem: {
     alignItems: 'center',
   },
-  statCardWide: {
-    width: '92%',
-  },
-  statCardLight: {
-    backgroundColor: colors.neutral.white,
-    borderWidth: 1,
-    borderColor: colors.neutral.border,
-  },
-  statCardDark: {
-    backgroundColor: colors.dark.bg.secondary,
-    borderWidth: 1,
-    borderColor: colors.dark.border,
-  },
-  statNumber: {
-    fontSize: typography.sizes.heading,
+  statValue: {
+    fontSize: typography.sizes.xxl,
     fontWeight: typography.weights.bold,
-    marginBottom: spacing.sm,
+    marginBottom: spacing.xs,
   },
-  statLabel: {
-    fontSize: typography.sizes.sm,
-    textAlign: 'center',
+  statText: {
+    fontSize: typography.sizes.xs,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
   },
-  startButton: {
+  statDivider: {
+    width: 1,
+    height: 30,
+    backgroundColor: colors.neutral.border,
+  },
+  actionsContainer: {
+    gap: spacing.base,
+  },
+  primaryButton: {
     backgroundColor: colors.primary.main,
     padding: spacing.lg,
     borderRadius: borderRadius.lg,
@@ -387,68 +371,52 @@ const styles = StyleSheet.create({
     shadowRadius: 8,
     elevation: 4,
   },
-  startButtonDisabled: {
+  primaryButtonDisabled: {
     backgroundColor: colors.neutral.border,
   },
-  startButtonText: {
+  primaryButtonText: {
     color: colors.neutral.white,
     fontSize: typography.sizes.xl,
     fontWeight: typography.weights.semibold,
     marginRight: spacing.sm,
   },
-  startButtonIcon: {
+  primaryButtonIcon: {
     color: colors.neutral.white,
     fontSize: typography.sizes.xl,
     fontWeight: typography.weights.semibold,
   },
-  syncNotification: {
+  secondaryActions: {
+    flexDirection: 'row',
+    gap: spacing.base,
+  },
+  secondaryButton: {
+    flex: 1,
+    padding: spacing.base,
+    borderRadius: borderRadius.md,
+    borderWidth: 1,
+    alignItems: 'center',
+  },
+  secondaryButtonLight: {
+    backgroundColor: colors.neutral.white,
+    borderColor: colors.neutral.border,
+  },
+  secondaryButtonDark: {
+    backgroundColor: colors.dark.bg.secondary,
+    borderColor: colors.dark.border,
+  },
+  secondaryButtonText: {
+    fontSize: typography.sizes.base,
+    fontWeight: typography.weights.medium,
+  },
+  notification: {
     padding: spacing.base,
     borderRadius: borderRadius.md,
     backgroundColor: colors.success.bg,
-    marginBottom: spacing.md,
     alignItems: 'center',
   },
-  syncNotificationText: {
-    fontSize: typography.sizes.base,
+  notificationText: {
+    fontSize: typography.sizes.sm,
     fontWeight: typography.weights.semibold,
-  },
-  syncButton: {
-    padding: spacing.base,
-    borderRadius: borderRadius.md,
-    marginBottom: spacing.lg,
-    borderWidth: 1,
-  },
-  syncButtonLight: {
-    borderColor: colors.primary.main,
-    backgroundColor: colors.primary.bg,
-  },
-  syncButtonDark: {
-    borderColor: colors.primary.light,
-    backgroundColor: colors.dark.bg.tertiary,
-  },
-  syncButtonText: {
-    fontSize: typography.sizes.base,
-    fontWeight: typography.weights.semibold,
-    textAlign: 'center',
-  },
-  browseButton: {
-    padding: spacing.base,
-    borderRadius: borderRadius.md,
-    marginBottom: spacing.md,
-    borderWidth: 1,
-  },
-  browseButtonLight: {
-    borderColor: colors.primary.main,
-    backgroundColor: colors.primary.bg,
-  },
-  browseButtonDark: {
-    borderColor: colors.primary.light,
-    backgroundColor: colors.dark.bg.tertiary,
-  },
-  browseButtonText: {
-    fontSize: typography.sizes.base,
-    fontWeight: typography.weights.semibold,
-    textAlign: 'center',
   },
   resetButton: {
     marginTop: spacing.xl,
@@ -456,6 +424,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   resetButtonText: {
-    fontSize: typography.sizes.sm,
+    fontSize: typography.sizes.xs,
+    opacity: 0.5,
   },
 });

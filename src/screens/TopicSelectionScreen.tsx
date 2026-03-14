@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { Topic } from '../types/content';
-import { colors, typography, spacing, borderRadius } from '../constants/theme';
+import { colors, typography, spacing, borderRadius, getCategoryColor } from '../constants/theme';
 import { getTopicLibrary } from '../constants/topicLibrary';
 import { getCompletedTopicIds } from '../services/storage/progressStorage';
 
@@ -31,6 +31,7 @@ export const TopicSelectionScreen: React.FC<TopicSelectionScreenProps> = ({
   isDarkMode,
 }) => {
   const [topics, setTopics] = useState<TopicWithStatus[]>([]);
+  const [allTopics, setAllTopics] = useState<TopicWithStatus[]>([]);
   const [filter, setFilter] = useState<'all' | 'unread' | 'completed'>('all');
   const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
 
@@ -40,40 +41,45 @@ export const TopicSelectionScreen: React.FC<TopicSelectionScreenProps> = ({
 
   const loadTopics = async () => {
     try {
-      const allTopics = await getTopicLibrary();
+      const library = await getTopicLibrary();
       const completedIds = await getCompletedTopicIds();
 
-      let topicsWithStatus: TopicWithStatus[] = allTopics.map((topic) => ({
+      const topicsWithStatus: TopicWithStatus[] = library.map((topic) => ({
         ...topic,
         isCompleted: completedIds.includes(topic.id),
       }));
 
+      // Store all topics for category list
+      setAllTopics(topicsWithStatus);
+
       // Apply filters
+      let filteredTopics = [...topicsWithStatus];
+
       if (filter === 'unread') {
-        topicsWithStatus = topicsWithStatus.filter((t) => !t.isCompleted);
+        filteredTopics = filteredTopics.filter((t) => !t.isCompleted);
       } else if (filter === 'completed') {
-        topicsWithStatus = topicsWithStatus.filter((t) => t.isCompleted);
+        filteredTopics = filteredTopics.filter((t) => t.isCompleted);
       }
 
       if (categoryFilter) {
-        topicsWithStatus = topicsWithStatus.filter((t) => t.category === categoryFilter);
+        filteredTopics = filteredTopics.filter((t) => t.category === categoryFilter);
       }
 
       // Sort: unread first, then by title
-      topicsWithStatus.sort((a, b) => {
+      filteredTopics.sort((a, b) => {
         if (a.isCompleted !== b.isCompleted) {
           return a.isCompleted ? 1 : -1;
         }
         return a.title.localeCompare(b.title);
       });
 
-      setTopics(topicsWithStatus);
+      setTopics(filteredTopics);
     } catch (error) {
       console.error('Error loading topics:', error);
     }
   };
 
-  const categories = Array.from(new Set(topics.map((t) => t.category)));
+  const categories = Array.from(new Set(allTopics.map((t) => t.category)));
 
   const bgColor = isDarkMode ? colors.dark.bg.primary : colors.neutral.bg;
   const textColor = isDarkMode ? colors.dark.text.primary : colors.neutral.text.primary;
@@ -81,40 +87,47 @@ export const TopicSelectionScreen: React.FC<TopicSelectionScreenProps> = ({
     ? colors.dark.text.secondary
     : colors.neutral.text.secondary;
 
-  const renderTopic = ({ item }: { item: TopicWithStatus }) => (
-    <TouchableOpacity
-      style={[
-        styles.topicCard,
-        isDarkMode ? styles.topicCardDark : styles.topicCardLight,
-        item.isCompleted && styles.topicCardCompleted,
-      ]}
-      onPress={() => onSelectTopic(item)}
-    >
-      <View style={styles.topicHeader}>
-        <Text style={[styles.topicTitle, { color: textColor }]} numberOfLines={2}>
-          {item.title}
-        </Text>
-        {item.isCompleted && <Text style={styles.completedBadge}>✓</Text>}
-      </View>
-      <View style={styles.topicMeta}>
-        <Text style={[styles.topicCategory, { color: secondaryTextColor }]}>
-          {item.category.toUpperCase()}
-        </Text>
-        <Text style={[styles.topicTime, { color: secondaryTextColor }]}>
-          {item.estimatedReadingTime} min
-        </Text>
-      </View>
-      {item.tags && item.tags.length > 0 && (
-        <View style={styles.tagContainer}>
-          {item.tags.slice(0, 3).map((tag, index) => (
-            <Text key={index} style={[styles.tag, { color: secondaryTextColor }]}>
-              #{tag}
-            </Text>
-          ))}
+  const renderTopic = ({ item }: { item: TopicWithStatus }) => {
+    const categoryColor = getCategoryColor(item.category);
+
+    return (
+      <TouchableOpacity
+        style={[
+          styles.topicCard,
+          isDarkMode ? styles.topicCardDark : styles.topicCardLight,
+          item.isCompleted && styles.topicCardCompleted,
+          { borderLeftWidth: 4, borderLeftColor: categoryColor.main },
+        ]}
+        onPress={() => onSelectTopic(item)}
+      >
+        <View style={styles.topicHeader}>
+          <Text style={[styles.topicTitle, { color: textColor }]} numberOfLines={2}>
+            {item.title}
+          </Text>
+          {item.isCompleted && <Text style={styles.completedBadge}>✓</Text>}
         </View>
-      )}
-    </TouchableOpacity>
-  );
+        <View style={styles.topicMeta}>
+          <View style={[styles.categoryBadge, { backgroundColor: categoryColor.bg }]}>
+            <Text style={[styles.topicCategory, { color: categoryColor.main }]}>
+              {item.category.toUpperCase()}
+            </Text>
+          </View>
+          <Text style={[styles.topicTime, { color: secondaryTextColor }]}>
+            {item.estimatedReadingTime} min
+          </Text>
+        </View>
+        {item.tags && item.tags.length > 0 && (
+          <View style={styles.tagContainer}>
+            {item.tags.slice(0, 3).map((tag, index) => (
+              <Text key={index} style={[styles.tag, { color: secondaryTextColor }]}>
+                #{tag}
+              </Text>
+            ))}
+          </View>
+        )}
+      </TouchableOpacity>
+    );
+  };
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: bgColor }]}>
@@ -141,34 +154,32 @@ export const TopicSelectionScreen: React.FC<TopicSelectionScreenProps> = ({
         <TouchableOpacity
           style={[
             styles.filterChip,
-            filter === 'all' && styles.filterChipActive,
             isDarkMode ? styles.filterChipDark : styles.filterChipLight,
+            filter === 'all' && styles.filterChipActive,
           ]}
           onPress={() => setFilter('all')}
         >
           <Text
             style={[
               styles.filterChipText,
-              filter === 'all' && styles.filterChipTextActive,
-              { color: filter === 'all' ? colors.neutral.white : textColor },
+              { color: filter === 'all' ? colors.primary.main : secondaryTextColor },
             ]}
           >
-            All ({topics.length})
+            All
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[
             styles.filterChip,
-            filter === 'unread' && styles.filterChipActive,
             isDarkMode ? styles.filterChipDark : styles.filterChipLight,
+            filter === 'unread' && styles.filterChipActive,
           ]}
           onPress={() => setFilter('unread')}
         >
           <Text
             style={[
               styles.filterChipText,
-              filter === 'unread' && styles.filterChipTextActive,
-              { color: filter === 'unread' ? colors.neutral.white : textColor },
+              { color: filter === 'unread' ? colors.primary.main : secondaryTextColor },
             ]}
           >
             Unread
@@ -177,16 +188,15 @@ export const TopicSelectionScreen: React.FC<TopicSelectionScreenProps> = ({
         <TouchableOpacity
           style={[
             styles.filterChip,
-            filter === 'completed' && styles.filterChipActive,
             isDarkMode ? styles.filterChipDark : styles.filterChipLight,
+            filter === 'completed' && styles.filterChipActive,
           ]}
           onPress={() => setFilter('completed')}
         >
           <Text
             style={[
               styles.filterChipText,
-              filter === 'completed' && styles.filterChipTextActive,
-              { color: filter === 'completed' ? colors.neutral.white : textColor },
+              { color: filter === 'completed' ? colors.primary.main : secondaryTextColor },
             ]}
           >
             Read
@@ -195,13 +205,13 @@ export const TopicSelectionScreen: React.FC<TopicSelectionScreenProps> = ({
       </View>
 
       {/* Category filter */}
-      {categories.length > 1 && (
+      {categories.length > 0 && (
         <View style={styles.categoryContainer}>
           <TouchableOpacity
             style={[
               styles.categoryChip,
-              !categoryFilter && styles.categoryChipActive,
               isDarkMode ? styles.categoryChipDark : styles.categoryChipLight,
+              !categoryFilter && styles.categoryChipActive,
             ]}
             onPress={() => setCategoryFilter(null)}
           >
@@ -219,8 +229,8 @@ export const TopicSelectionScreen: React.FC<TopicSelectionScreenProps> = ({
               key={category}
               style={[
                 styles.categoryChip,
-                categoryFilter === category && styles.categoryChipActive,
                 isDarkMode ? styles.categoryChipDark : styles.categoryChipLight,
+                categoryFilter === category && styles.categoryChipActive,
               ]}
               onPress={() =>
                 setCategoryFilter(categoryFilter === category ? null : category)
@@ -298,28 +308,25 @@ const styles = StyleSheet.create({
   },
   filterChip: {
     paddingHorizontal: spacing.md,
-    paddingVertical: spacing.sm,
-    borderRadius: borderRadius.full,
+    paddingVertical: spacing.xs,
+    borderRadius: borderRadius.md,
     borderWidth: 1,
   },
   filterChipLight: {
     borderColor: colors.neutral.border,
-    backgroundColor: colors.neutral.bg,
+    backgroundColor: colors.neutral.white,
   },
   filterChipDark: {
     borderColor: colors.dark.border,
     backgroundColor: colors.dark.bg.secondary,
   },
   filterChipActive: {
-    backgroundColor: colors.primary.main,
     borderColor: colors.primary.main,
   },
   filterChipText: {
-    fontSize: typography.sizes.sm,
-    fontWeight: typography.weights.semibold,
-  },
-  filterChipTextActive: {
-    color: colors.neutral.white,
+    fontSize: typography.sizes.xs,
+    fontWeight: typography.weights.medium,
+    textTransform: 'capitalize',
   },
   categoryContainer: {
     flexDirection: 'row',
@@ -390,7 +397,13 @@ const styles = StyleSheet.create({
   topicMeta: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
     marginBottom: spacing.sm,
+  },
+  categoryBadge: {
+    paddingHorizontal: spacing.sm,
+    paddingVertical: spacing.xs,
+    borderRadius: borderRadius.sm,
   },
   topicCategory: {
     fontSize: typography.sizes.xs,

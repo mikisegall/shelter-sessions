@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Topic } from '../types/content';
 import { ContentBlock } from '../components/topic/ContentBlock';
 import { QuizQuestion } from '../components/topic/QuizQuestion';
+import { getCategoryColor } from '../constants/theme';
 
 interface TopicViewerScreenProps {
   topic: Topic;
@@ -19,22 +20,7 @@ export const TopicViewerScreen: React.FC<TopicViewerScreenProps> = ({ topic }) =
     }));
   };
 
-  const getCategoryColor = () => {
-    switch (topic.category) {
-      case 'science':
-        return '#2196F3';
-      case 'technology':
-        return '#FF9800';
-      case 'history':
-        return '#9C27B0';
-      case 'culture':
-        return '#4CAF50';
-      case 'philosophy':
-        return '#E91E63';
-      default:
-        return '#757575';
-    }
-  };
+  const categoryColor = getCategoryColor(topic.category).main;
 
   const getScoreMessage = () => {
     if (quizScore.total === 0) return null;
@@ -53,7 +39,7 @@ export const TopicViewerScreen: React.FC<TopicViewerScreenProps> = ({ topic }) =
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
         {/* Header */}
         <View style={styles.header}>
-          <View style={[styles.categoryBadge, { backgroundColor: getCategoryColor() }]}>
+          <View style={[styles.categoryBadge, { backgroundColor: categoryColor }]}>
             <Text style={styles.categoryText}>{topic.category.toUpperCase()}</Text>
           </View>
           <Text style={styles.title}>{topic.title}</Text>

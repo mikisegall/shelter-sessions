@@ -1,6 +1,35 @@
+/**
+ * Content Sync Service
+ *
+ * Handles downloading new topics from GitHub Pages and managing sync state.
+ *
+ * ## Architecture
+ * - Manifest-based sync: fetches manifest.json to get list of available topics
+ * - Downloads only new topics (not already synced or bundled)
+ * - Stores downloaded topics in AsyncStorage
+ * - Tracks synced topic IDs to prevent re-downloading
+ * - Graceful offline handling (fails silently if no network)
+ *
+ * ## Storage Keys
+ * - `@shelter_sessions:downloaded_topics` - Array of downloaded Topic objects
+ * - `@shelter_sessions:synced_topics` - Array of synced topic IDs
+ * - `@shelter_sessions:last_sync` - ISO timestamp of last successful sync
+ *
+ * ## Sync Flow
+ * 1. Fetch manifest.json from GitHub Pages
+ * 2. Get list of already synced topic IDs
+ * 3. On first sync, mark bundled topics as synced (prevents re-downloading)
+ * 4. Download topics not in synced list
+ * 5. Update synced IDs and last sync timestamp
+ * 6. Return newly downloaded topics
+ *
+ * @module services/sync/contentSync
+ */
+
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Topic } from '../../types/content';
 
+// GitHub Pages URLs for manifest and topic files
 const MANIFEST_URL =
   'https://raw.githubusercontent.com/mikisegall/shelter-sessions/main/public/topics/manifest.json';
 const TOPICS_BASE_URL =

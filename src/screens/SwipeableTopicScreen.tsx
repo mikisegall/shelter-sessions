@@ -14,7 +14,6 @@ import { StatusBar } from 'expo-status-bar';
 import { Topic } from '../types/content';
 import { ContentCard } from '../components/topic/ContentCard';
 import { QuizCard } from '../components/topic/QuizCard';
-import { ProgressBar } from '../components/common/ProgressBar';
 import { colors, typography, spacing, borderRadius, getCategoryColor } from '../constants/theme';
 
 interface SwipeableTopicScreenProps {
@@ -197,12 +196,17 @@ export const SwipeableTopicScreen: React.FC<SwipeableTopicScreenProps> = ({
         </TouchableOpacity>
 
         <View style={styles.progressContainerHeader}>
-          <ProgressBar
-            current={currentIndex + 1}
-            total={cards.length}
-            isDarkMode={isDarkMode}
-            showLabel={false}
-          />
+          <View style={[styles.progressBar, isDarkMode ? { backgroundColor: colors.dark.bg.tertiary } : { backgroundColor: colors.neutral.border }]}>
+            <View
+              style={[
+                styles.progressFill,
+                {
+                  width: `${((currentIndex + 1) / cards.length) * 100}%`,
+                  backgroundColor: getCategoryColor(topic.category).main,
+                },
+              ]}
+            />
+          </View>
           <Text style={[styles.progressText, isDarkMode ? styles.textSecondaryDark : styles.textSecondaryLight]}>
             {currentIndex + 1} / {cards.length}
           </Text>
@@ -213,14 +217,6 @@ export const SwipeableTopicScreen: React.FC<SwipeableTopicScreenProps> = ({
         </TouchableOpacity>
       </View>
 
-      {/* Progress Indicator */}
-      <View style={styles.progressContainer}>
-        <ProgressBar
-          current={currentIndex + 1}
-          total={cards.length}
-          isDarkMode={isDarkMode}
-        />
-      </View>
 
       {/* Swipeable content */}
       <FlatList
@@ -275,6 +271,16 @@ const styles = StyleSheet.create({
   progressContainerHeader: {
     flex: 1,
     marginRight: spacing.base,
+  },
+  progressBar: {
+    height: 4,
+    borderRadius: borderRadius.full,
+    overflow: 'hidden',
+    marginBottom: spacing.sm,
+  },
+  progressFill: {
+    height: '100%',
+    borderRadius: borderRadius.full,
   },
   progressText: {
     fontSize: typography.sizes.xs,

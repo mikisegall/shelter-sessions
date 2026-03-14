@@ -3,15 +3,22 @@
  * Defines the structure for learning topics and their components
  */
 
+/**
+ * Available topic categories with associated colors:
+ * - finance: Green (#10B981) - Financial markets, banking, crypto
+ * - economics: Orange (#F59E0B) - Economic policy, inflation, trade
+ * - geopolitics: Red (#EF4444) - International relations, conflicts
+ * - technology: Blue (#3B82F6) - Tech companies, AI, platforms
+ * - science: Purple (#8B5CF6) - Scientific discoveries, health
+ * - culture: Pink (#EC4899) - Media, society, cultural phenomena
+ */
 export type TopicCategory =
-  | 'science'
+  | 'finance'
+  | 'economics'
+  | 'geopolitics'
   | 'technology'
-  | 'history'
-  | 'culture'
-  | 'philosophy'
-  | 'business'
-  | 'psychology'
-  | 'nature';
+  | 'science'
+  | 'culture';
 
 export type ContentBlockType =
   | 'intro'       // Introduction to the topic
