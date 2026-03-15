@@ -13,6 +13,121 @@ See `IMPLEMENTATION_PLAN.md` for full roadmap.
 
 ---
 
+## 🤖 Claude Collaboration Guidelines
+
+### Autonomy & Decision Making
+**Default Mode: Autonomous Execution**
+
+When the user asks you to complete a task, you should:
+- **Make reasonable decisions without asking** unless there are multiple valid architectural approaches
+- **Fix errors you encounter** - debug and iterate until tests pass
+- **Run all necessary validation steps** automatically (type-check, test-topics.js, etc.)
+- **Handle edge cases** - if you find issues while implementing, fix them proactively
+- **Complete the full workflow** - don't stop halfway for approval unless explicitly asked
+
+**When to Ask Questions:**
+- Multiple valid architectural approaches exist
+- Unclear requirements that could lead to significant rework
+- Security or privacy implications
+- Breaking changes to existing functionality
+
+**When NOT to Ask:**
+- Implementation details (variable names, file structure within conventions)
+- Bug fixes encountered during implementation
+- Validation steps (always run them)
+- Commit message wording (follow conventions below)
+
+### Adding Topics Workflow
+
+**When user requests new topics, automatically:**
+1. Create JSON files following existing schema in `content/topics/`
+2. Validate with `node test-topics.js`
+3. Run `npm run type-check`
+4. If validation passes: stage files but **wait for user review before committing**
+5. If validation fails: debug and fix until it passes
+6. Show created files for review
+
+**Commit message format:**
+```
+content: Add [topic-name] topic
+
+Or for multiple:
+content: Add topics for [X, Y, Z]
+```
+
+**User preference:** Review content before commits, but you can auto-fix validation errors.
+
+### Validation & Quality Checks
+
+**Always run before marking a task complete:**
+- `npm run type-check` - TypeScript validation
+- `node test-topics.js` - Topic content validation (when topics are modified)
+- `npm run lint` - Code quality (for source code changes)
+- Manual review of generated content files
+
+**If validation fails:**
+- Debug the issue yourself
+- Fix and re-validate
+- Only surface to user if you cannot resolve after reasonable attempts
+
+### Build & Deployment
+
+**Before any build or deployment:**
+1. Run `npm run validate-build` (includes bundling and topic validation)
+2. Fix any issues found
+3. Verify all topic JSON files are committed to git
+4. Only then proceed with build commands
+
+**User preference:** Validate thoroughly before builds to avoid iteration cycles.
+
+### Commit Workflow
+
+**Default behavior:**
+- For content additions (topics): Stage files, show for review, wait for commit approval
+- For bug fixes: Auto-commit with clear message if tests pass
+- For features: Complete implementation, validate, then ask about commit
+
+**Commit message format (strictly follow):**
+```
+<type>: <description>
+
+Types:
+- content: Topic additions or content changes
+- feat: New features
+- fix: Bug fixes
+- refactor: Code improvements without behavior change
+- docs: Documentation updates
+- chore: Tooling, dependencies, config
+```
+
+### Error Handling Philosophy
+
+**When you encounter errors:**
+1. Read the full error message and stack trace
+2. Check relevant files and configuration
+3. Apply fix based on error analysis
+4. Re-run validation
+5. Only escalate if multiple fix attempts fail
+
+**Common patterns to auto-fix:**
+- Missing dependencies → check package.json and suggest install
+- Type errors → add proper types or fix type mismatches
+- Linting errors → apply fixes automatically
+- Test failures → debug and fix the underlying issue
+
+### Iteration Speed
+
+**Optimize for speed by:**
+- Batching related tasks (create + validate + stage)
+- Running validations in parallel when possible
+- Making incremental commits for large features
+- Fixing small issues immediately rather than noting them
+- Using existing patterns from codebase without asking
+
+**User expectation:** Fast iteration, minimal back-and-forth, autonomous problem-solving.
+
+---
+
 ## Development Commands
 
 ### Setup & Installation
