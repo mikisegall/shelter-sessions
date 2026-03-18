@@ -1,0 +1,107 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440010",
+  "title": "China's Belt and Road Initiative: Modern Silk Road",
+  "category": "geopolitics",
+  "estimatedReadingTime": 14,
+  "createdAt": "2026-03-18T10:00:00Z",
+  "tags": ["geopolitics", "china", "economics", "infrastructure", "global-trade"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "In 2013, China launched the most ambitious infrastructure project in human history: the Belt and Road Initiative (BRI). Often called the 'New Silk Road,' it aims to connect Asia, Europe, and Africa through massive investments in ports, railways, highways, and energy pipelines. But is it economic development or geopolitical strategy?"
+    },
+    {
+      "type": "key_point",
+      "text": "The BRI spans over 70 countries representing 65% of the world's population and 40% of global GDP. China has pledged over $1 trillion in infrastructure investments, building everything from railways in Kenya to ports in Pakistan to power plants in Serbia. The scale is unprecedented - for comparison, the Marshall Plan that rebuilt Europe after WWII cost about $130 billion in today's dollars."
+    },
+    {
+      "type": "highlight",
+      "text": "China's motivation is multifaceted: secure trade routes for its exports, find markets for its massive construction industry, increase its global influence, and reduce dependence on shipping routes through potential chokepoints like the Strait of Malacca. The initiative also addresses China's domestic overcapacity in steel, cement, and construction."
+    },
+    {
+      "type": "detail",
+      "text": "The 'Belt' refers to overland routes through Central Asia, while the 'Road' refers to maritime routes through Southeast Asia, the Middle East, and Africa. Projects include the China-Pakistan Economic Corridor (CPEC), high-speed rail in Indonesia, and the port of Piraeus in Greece, which China now operates."
+    },
+    {
+      "type": "key_point",
+      "text": "Critics warn of 'debt-trap diplomacy.' Countries like Sri Lanka borrowed heavily for BRI projects but couldn't repay loans, forcing them to lease strategic assets back to China - Sri Lanka handed over its Hambantota port on a 99-year lease. Pakistan's debt to China exceeds $60 billion, raising sovereignty concerns."
+    },
+    {
+      "type": "example",
+      "text": "In Malaysia, the government renegotiated a $20 billion railway project after determining the original deal was overpriced and would create unsustainable debt. Italy became the first G7 nation to join the BRI in 2019, but has since reconsidered due to limited benefits and geopolitical pressure from allies."
+    },
+    {
+      "type": "detail",
+      "text": "Environmental concerns are significant. Many BRI projects involve coal power plants in developing nations, undermining global climate goals. Local communities often see displacement without adequate compensation. Labor practices vary widely, with some projects employing mostly Chinese workers rather than locals."
+    },
+    {
+      "type": "highlight",
+      "text": "The United States and allies have responded with competing initiatives: the Blue Dot Network, Build Back Better World (B3W), and the EU's Global Gateway. These aim to offer developing nations alternative sources of infrastructure investment with more transparent terms and higher standards."
+    },
+    {
+      "type": "detail",
+      "text": "Some countries have benefited genuinely. Ethiopia's Chinese-built railway to Djibouti transformed its trade capacity. Greece's Piraeus port became Europe's fourth busiest under Chinese management. The key difference seems to be governance - countries with strong institutions negotiate better terms and avoid debt traps."
+    },
+    {
+      "type": "summary",
+      "text": "The Belt and Road Initiative represents China's bid to reshape global economic and political order. Whether it's viewed as development assistance or strategic encirclement depends largely on perspective. The reality is probably both - genuine infrastructure needs are being met, but with strings attached. As the initiative matures, its long-term impact on global power dynamics will become clearer. For now, it remains the defining geopolitical project of the 21st century."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Approximately how many countries participate in China's Belt and Road Initiative?",
+      "options": [
+        "25 countries",
+        "50 countries",
+        "Over 70 countries",
+        "150 countries"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Over 70 countries participate in the BRI, representing about 65% of the world's population and 40% of global GDP."
+    },
+    {
+      "question": "What is 'debt-trap diplomacy' in the context of BRI?",
+      "options": [
+        "China forgiving all loans to poor countries",
+        "Countries borrowing heavily, then having to lease assets to China when unable to repay",
+        "A type of trade agreement",
+        "A banking regulation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Debt-trap diplomacy refers to countries taking on unsustainable debt for BRI projects, then being forced to lease strategic assets back to China, as happened with Sri Lanka's Hambantota port."
+    },
+    {
+      "question": "What do the 'Belt' and 'Road' in Belt and Road Initiative refer to?",
+      "options": [
+        "Ancient Chinese inventions",
+        "Overland routes and maritime routes respectively",
+        "Two Chinese cities",
+        "Types of infrastructure projects"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The 'Belt' refers to overland routes through Central Asia, while the 'Road' refers to maritime routes through Southeast Asia, the Middle East, and Africa."
+    },
+    {
+      "question": "Which G7 nation joined the BRI but later reconsidered?",
+      "options": [
+        "France",
+        "Canada",
+        "Italy",
+        "Japan"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Italy became the first G7 nation to join the BRI in 2019, but has since reconsidered due to limited benefits and geopolitical pressure from allies."
+    },
+    {
+      "question": "What is one Western response to China's BRI?",
+      "options": [
+        "The Space Race",
+        "Build Back Better World (B3W)",
+        "The Green New Deal",
+        "NATO expansion"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The United States and allies launched competing initiatives including Build Back Better World (B3W), the Blue Dot Network, and the EU's Global Gateway to offer alternative infrastructure investment."
+    }
+  ]
+}

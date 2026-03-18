@@ -1,0 +1,107 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440023",
+  "title": "Mitochondrial Eve: The Woman All Humans Descend From",
+  "category": "science",
+  "estimatedReadingTime": 13,
+  "createdAt": "2026-03-18T13:15:00Z",
+  "tags": ["science", "genetics", "anthropology", "evolution", "human-origins"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "Every human alive today can trace their maternal lineage back to a single woman who lived in Africa roughly 150,000 years ago. Scientists call her 'Mitochondrial Eve.' This doesn't mean she was the only woman alive, or the biblical Eve. But through the quirks of genetic inheritance and population bottlenecks, she's the most recent common matrilineal ancestor of all living humans. Her story reveals how genetics can trace humanity's deep history."
+    },
+    {
+      "type": "key_point",
+      "text": "The discovery comes from mitochondrial DNA (mtDNA). Unlike nuclear DNA, which combines from both parents, mitochondrial DNA passes only from mother to child. Men carry it but don't pass it on. This creates an unbroken maternal chain through generations. By comparing mtDNA between people worldwide, geneticists can trace lineages back to their common ancestor."
+    },
+    {
+      "type": "highlight",
+      "text": "Mitochondrial Eve wasn't alone or special in her time - she lived among thousands of other women. But through random chance, the maternal lines of those other women eventually died out (they had sons only, or daughters who had sons only, eventually). Eve's line happened to continue unbroken through at least one daughter in each generation until today. Everyone else's maternal lineage went extinct."
+    },
+    {
+      "type": "detail",
+      "text": "The name is somewhat misleading. She wasn't the first woman, just the most recent common ancestor in the maternal line. There were many human women before her; their mtDNA lineages just don't survive today. Additionally, there's a 'Y-Chromosomal Adam' - the most recent paternal common ancestor of all men, who lived roughly 200,000-300,000 years ago. Eve and Adam never met; they lived tens of thousands of years apart."
+    },
+    {
+      "type": "key_point",
+      "text": "Genetic evidence places Mitochondrial Eve in Africa, supporting the 'Out of Africa' theory of human origins. Modern humans evolved in Africa, then migrated globally. When scientists compare mtDNA diversity, African populations show the most variation - indicating longer time for mutations to accumulate. Non-African populations have less diversity, consistent with small founder populations leaving Africa relatively recently."
+    },
+    {
+      "type": "example",
+      "text": "Imagine a family reunion of all humanity. Mitochondrial Eve would be at the top of the maternal family tree. But this tree is constantly shifting. As human lines go extinct, the 'Eve' moves forward in time. In 100,000 years, humans will trace back to a more recent common maternal ancestor, as some of today's maternal lineages inevitably go extinct."
+    },
+    {
+      "type": "detail",
+      "text": "Importantly, Eve wasn't the only genetic contributor. You carry DNA from thousands of ancestors, not just your maternal lineage. Your nuclear DNA comes from countless individuals Eve's time. But mtDNA's unique inheritance pattern creates a single unbroken chain that's easier to trace. It's a tool for understanding human migration and evolution, not a complete picture of ancestry."
+    },
+    {
+      "type": "highlight",
+      "text": "Population bottlenecks accelerate the 'moving forward' of the common ancestor. If a population crashes to small numbers, lineages go extinct rapidly, making the common ancestor more recent. Some evidence suggests human populations crashed to perhaps 10,000 individuals around 70,000 years ago (possibly due to the Toba supervolcano eruption), which would have dramatically reduced genetic diversity."
+    },
+    {
+      "type": "detail",
+      "text": "The dating of Mitochondrial Eve is approximate, based on mutation rates in mtDNA. Geneticists estimate mutations occur at a certain rate per generation, then count differences between lineages to estimate time since divergence. Uncertainty in mutation rates means estimates range from 100,000 to 200,000 years ago, but converge around 150,000 years."
+    },
+    {
+      "type": "summary",
+      "text": "Mitochondrial Eve reminds us that all humans are remarkably closely related. Our species is young evolutionarily, and we share recent common ancestors. This doesn't support simplistic narratives about a single couple - Eve lived among a population, and we inherit DNA from thousands of people. But it demonstrates how genetics can illuminate deep history, tracing maternal lineages back to a single African woman who, through chance and survival, became the matrilineal ancestor of all living humans."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why is she called 'Mitochondrial Eve'?",
+      "options": [
+        "She was the first woman",
+        "She was the only woman alive in her time",
+        "She's the most recent common matrilineal ancestor of all living humans",
+        "She discovered mitochondria"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Mitochondrial Eve is the most recent common matrilineal ancestor of all living humans - the woman to whom all maternal lineages trace back."
+    },
+    {
+      "question": "Why does mitochondrial DNA only trace maternal lineage?",
+      "options": [
+        "It's found only in women",
+        "It passes only from mother to child",
+        "It mutates too quickly",
+        "Men don't have mitochondria"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Mitochondrial DNA passes only from mother to child. Men carry it but don't pass it on, creating an unbroken maternal chain through generations."
+    },
+    {
+      "question": "When did Mitochondrial Eve live?",
+      "options": [
+        "10,000 years ago",
+        "50,000 years ago",
+        "Roughly 150,000 years ago",
+        "1 million years ago"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Genetic evidence suggests Mitochondrial Eve lived approximately 150,000 years ago, with estimates ranging from 100,000 to 200,000 years."
+    },
+    {
+      "question": "Did Mitochondrial Eve and Y-Chromosomal Adam know each other?",
+      "options": [
+        "Yes, they were a couple",
+        "Yes, they lived in the same village",
+        "No, they lived tens of thousands of years apart",
+        "No one knows"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Mitochondrial Eve and Y-Chromosomal Adam lived tens of thousands of years apart and never met - they're just the most recent common ancestors in their respective lineages."
+    },
+    {
+      "question": "What does the higher mtDNA diversity in African populations indicate?",
+      "options": [
+        "Africans are more evolved",
+        "Africa has more pollution",
+        "Modern humans originated in Africa with more time for mutations to accumulate",
+        "Nothing significant"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Higher mtDNA diversity in African populations indicates modern humans originated there, with more time for mutations to accumulate before populations migrated to other continents."
+    }
+  ]
+}

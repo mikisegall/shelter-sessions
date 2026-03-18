@@ -1,0 +1,107 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440016",
+  "title": "The Double-Slit Experiment: Reality's Weirdest Test",
+  "category": "science",
+  "estimatedReadingTime": 13,
+  "createdAt": "2026-03-18T11:30:00Z",
+  "tags": ["science", "physics", "quantum-mechanics", "philosophy", "experiment"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "It's been called the most beautiful experiment in physics. It reveals something so strange about reality that even Einstein refused to fully accept it. The double-slit experiment shows that particles behave differently when observed - suggesting that reality itself might depend on measurement. It's the experiment that launched quantum mechanics and continues to baffle scientists today."
+    },
+    {
+      "type": "key_point",
+      "text": "Here's the setup: shine light through two narrow slits onto a screen. Common sense says you should see two bright lines. Instead, you see an interference pattern - multiple bands of light and dark. This happens because light behaves as waves, and the waves from each slit interfere with each other, creating the pattern. So far, so good."
+    },
+    {
+      "type": "highlight",
+      "text": "Now fire photons (particles of light) one at a time. Each photon should go through one slit or the other, right? You'd expect two lines. But incredibly, even single photons build up the same interference pattern over time. Each photon somehow 'knows' about both slits, as if it passes through both simultaneously. The particle acts like a wave spread across both slits."
+    },
+    {
+      "type": "detail",
+      "text": "Here's where it gets weird. Place a detector at the slits to see which one each photon passes through. Now the interference pattern disappears! You get two lines instead. By simply observing which path the photon takes, you change its behavior. The act of measurement collapses the wave function, forcing the photon to 'choose' one slit."
+    },
+    {
+      "type": "key_point",
+      "text": "This isn't limited to light. The experiment has been done with electrons, atoms, and even large molecules containing over 800 atoms. In every case, the same bizarre result: particles create interference patterns when unobserved, but behave like classical particles when measured. Observation fundamentally alters reality at the quantum level."
+    },
+    {
+      "type": "example",
+      "text": "Physicist Richard Feynman said this experiment contains 'the only mystery' of quantum mechanics. Before measurement, particles exist in superposition - simultaneously in multiple states. Only when measured does the particle 'collapse' into a definite state. It's not that we don't know which slit it went through; it genuinely didn't go through either until we looked."
+    },
+    {
+      "type": "detail",
+      "text": "The 'delayed choice' variant makes it even stranger. You can decide whether to measure which slit the particle went through after it's already passed the slits but before it hits the screen. Your future choice retroactively determines whether the particle behaved as a wave or particle in the past. Cause and effect get murky at quantum scales."
+    },
+    {
+      "type": "highlight",
+      "text": "What counts as 'observation'? It's not human consciousness - any interaction with the environment that could theoretically reveal which-path information counts. A detector, a stray photon bouncing off the particle, even air molecules can act as observers. It's about information becoming available to the universe, not about minds or awareness."
+    },
+    {
+      "type": "detail",
+      "text": "Many interpretations exist. The Copenhagen interpretation says particles exist in superposition until measured. The Many-Worlds interpretation says both possibilities happen, splitting the universe into branches. Pilot-wave theory says particles have definite positions guided by a quantum wave field. Each interpretation explains the math but makes different claims about reality."
+    },
+    {
+      "type": "summary",
+      "text": "The double-slit experiment forces us to abandon intuitive notions of reality. Particles don't have definite properties until measured. The act of observation isn't passive - it participates in creating reality. Whether this means consciousness shapes reality, the universe splits constantly, or hidden variables we can't detect determine outcomes remains debated. But the experimental facts are undeniable: at quantum scales, reality is far stranger than our everyday experience suggests."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What happens when you fire single photons through the double slits without observing them?",
+      "options": [
+        "You see two bright lines",
+        "Nothing appears",
+        "They build up an interference pattern",
+        "They bounce back"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Even single photons fired one at a time build up an interference pattern over time, as if each photon passes through both slits simultaneously as a wave."
+    },
+    {
+      "question": "What happens when you place a detector to see which slit a photon passes through?",
+      "options": [
+        "The interference pattern disappears",
+        "The interference pattern gets stronger",
+        "The detector breaks",
+        "Nothing changes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "When you measure which slit the photon passes through, the interference pattern disappears and you get two lines instead - observation changes the particle's behavior."
+    },
+    {
+      "question": "What is the largest object with which the double-slit experiment has been successfully performed?",
+      "options": [
+        "Photons only",
+        "Electrons only",
+        "Molecules containing over 800 atoms",
+        "Baseballs"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The double-slit experiment has been successfully performed with increasingly large objects, including molecules containing over 800 atoms."
+    },
+    {
+      "question": "What does 'observation' mean in quantum mechanics?",
+      "options": [
+        "A human looking at something",
+        "Human consciousness",
+        "Any interaction that could reveal which-path information",
+        "Using a microscope"
+      ],
+      "correctAnswer": 2,
+      "explanation": "In quantum mechanics, observation means any interaction with the environment that could theoretically reveal which-path information - not specifically human consciousness."
+    },
+    {
+      "question": "What did physicist Richard Feynman say about the double-slit experiment?",
+      "options": [
+        "It's impossible to perform",
+        "It contains 'the only mystery' of quantum mechanics",
+        "It's too simple to matter",
+        "It proves quantum mechanics is wrong"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Richard Feynman stated that the double-slit experiment contains 'the only mystery' of quantum mechanics, capturing the essence of quantum weirdness."
+    }
+  ]
+}

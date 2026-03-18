@@ -1,0 +1,107 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440021",
+  "title": "The Sahel: Africa's Forgotten Geopolitical Battleground",
+  "category": "geopolitics",
+  "estimatedReadingTime": 13,
+  "createdAt": "2026-03-18T12:45:00Z",
+  "tags": ["geopolitics", "africa", "security", "climate", "terrorism"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "The Sahel - a semi-arid belt stretching across Africa from Senegal to Sudan - has become one of the world's most volatile regions. Islamic extremist groups, military coups, Russian mercenaries, Western interventions, and climate-driven migration converge in a crisis that affects 300 million people yet receives little global attention. The Sahel is where terrorism, climate change, and great power competition intersect, creating a humanitarian disaster and strategic nightmare."
+    },
+    {
+      "type": "key_point",
+      "text": "The crisis intensified after Libya's 2011 collapse. When Gaddafi fell, weapons flooded south and battle-hardened fighters returned home. Mali, Niger, Burkina Faso, and Chad faced insurgencies from groups affiliated with Al-Qaeda and ISIS. Weak governments, porous borders, ethnic tensions, and youth unemployment created fertile ground. By 2023, the Sahel region faced more terrorism-related deaths than Afghanistan or Somalia."
+    },
+    {
+      "type": "highlight",
+      "text": "France intervened militarily in 2013 to stop extremists from overrunning Mali's capital, deploying thousands of troops across the Sahel. But after a decade, France withdrew in 2022 amid anti-French sentiment and military coups. Local populations saw French troops as neo-colonial occupiers unable to provide security. Meanwhile, extremist groups adapted, recruiting locally and embedding in communities."
+    },
+    {
+      "type": "detail",
+      "text": "Enter Russia. As France withdrew, Russian mercenary group Wagner appeared, offering security assistance to coup governments in Mali, Burkina Faso, and Central African Republic. Wagner's approach differs from Western counterterrorism - less concern for human rights, more ruthless tactics. They also secure mining rights and political influence, giving Russia strategic footholds in resource-rich regions."
+    },
+    {
+      "type": "key_point",
+      "text": "Climate change accelerates the crisis. The Sahel is warming 1.5 times faster than the global average. Droughts destroy pastoralist livelihoods, forcing migration. Conflicts erupt between herders and farmers over scarce resources. Lake Chad has shrunk 90% since the 1960s, displacing millions. Extremist groups exploit grievances, recruiting among desperate youth with few economic opportunities."
+    },
+    {
+      "type": "example",
+      "text": "In Burkina Faso, extremist attacks displaced over 2 million people by 2023. Schools close because teachers are targeted - over 6,000 schools shut down. Health clinics are destroyed. Government control extends only to major cities; vast rural areas are ungoverned. Burkina Faso's government, facing legitimacy crisis, expelled French troops and invited Russian support, illustrating the region's geopolitical realignment."
+    },
+    {
+      "type": "detail",
+      "text": "The United States maintains a significant but low-profile presence, operating drone bases and conducting training missions. However, military coups complicate this - US law restricts aid to coup governments. After Niger's 2023 coup, the US faced pressure to withdraw from its $100 million drone base, potentially ceding influence to Russia and limiting counterterrorism capabilities."
+    },
+    {
+      "type": "highlight",
+      "text": "The humanitarian toll is staggering. The Sahel faces one of the world's worst hunger crises - 30 million people need food assistance. Violence has displaced over 5 million people. Children are recruited as soldiers. Women face sexual violence and abduction. Yet funding for humanitarian aid is consistently short, and donor fatigue sets in as crises elsewhere compete for attention."
+    },
+    {
+      "type": "detail",
+      "text": "Coastal West African countries fear the crisis spreading south. Benin, Togo, Ghana, and Ivory Coast have experienced increasing attacks near their northern borders. These relatively stable, growing economies could face instability if extremist groups expand. Regional response through the G5 Sahel joint force has been hampered by funding shortages, distrust between nations, and coups disrupting coordination."
+    },
+    {
+      "type": "summary",
+      "text": "The Sahel represents a perfect storm: weak governance, poverty, climate change, extremism, and great power competition. Solutions require addressing root causes - economic development, climate adaptation, legitimate governance - not just military interventions. But this requires long-term commitment and resources that international actors have been unwilling to provide. As Western influence wanes and Russian and Chinese engagement grows, the Sahel's trajectory will shape African geopolitics for decades. It's a crisis the world ignores at its peril."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What event intensified the Sahel crisis starting in 2011?",
+      "options": [
+        "A major drought",
+        "Libya's collapse after Gaddafi's fall",
+        "A UN intervention",
+        "Discovery of oil"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Libya's 2011 collapse after Gaddafi's fall intensified the Sahel crisis as weapons flooded south and battle-hardened fighters returned home to wage insurgencies."
+    },
+    {
+      "question": "Which group entered the Sahel as France withdrew?",
+      "options": [
+        "NATO forces",
+        "Chinese military",
+        "Russian Wagner mercenaries",
+        "UN peacekeepers"
+      ],
+      "correctAnswer": 2,
+      "explanation": "As France withdrew in 2022, Russian mercenary group Wagner appeared, offering security assistance to coup governments in exchange for mining rights and political influence."
+    },
+    {
+      "question": "How much has Lake Chad shrunk since the 1960s?",
+      "options": [
+        "25%",
+        "50%",
+        "75%",
+        "90%"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Lake Chad has shrunk by about 90% since the 1960s, displacing millions and creating resource conflicts between herders and farmers."
+    },
+    {
+      "question": "How many people need food assistance in the Sahel?",
+      "options": [
+        "5 million",
+        "10 million",
+        "30 million",
+        "50 million"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The Sahel faces one of the world's worst hunger crises with approximately 30 million people needing food assistance."
+    },
+    {
+      "question": "How is the Sahel warming compared to global average temperatures?",
+      "options": [
+        "At the same rate",
+        "0.5 times faster",
+        "1.5 times faster",
+        "3 times faster"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The Sahel is warming 1.5 times faster than the global average, accelerating droughts, displacement, and conflicts over scarce resources."
+    }
+  ]
+}

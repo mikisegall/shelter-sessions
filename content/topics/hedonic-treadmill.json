@@ -1,0 +1,107 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440025",
+  "title": "The Hedonic Treadmill: Why Happiness Doesn't Last",
+  "category": "psychology",
+  "estimatedReadingTime": 13,
+  "createdAt": "2026-03-18T13:45:00Z",
+  "tags": ["psychology", "happiness", "wellbeing", "behavioral-economics", "adaptation"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "You get a promotion. For weeks, you're elated. Then gradually, the excitement fades. Soon, the new salary feels normal, and you're eyeing the next level up. This is the hedonic treadmill - our tendency to return to a relatively stable level of happiness despite major positive or negative life changes. It explains why lottery winners aren't necessarily happier long-term, and why pursuing happiness through external achievements often feels futile."
+    },
+    {
+      "type": "key_point",
+      "text": "Psychologists discovered that happiness has a 'set point' - a baseline level each person tends to return to. Studies following lottery winners and accident victims found both groups eventually returned to near their original happiness levels. Winners adapted to wealth; paraplegics adapted to disability. Major life changes create temporary spikes or drops, but we adapt surprisingly quickly."
+    },
+    {
+      "type": "highlight",
+      "text": "This adaptation is evolutionary. If achieving goals produced permanent happiness increases, our ancestors would've stopped striving after a few successes. The hedonic treadmill keeps us motivated - we pursue goals, briefly enjoy achievement, then pursue new goals. It drove survival and reproduction. But in modern life, it creates perpetual dissatisfaction despite unprecedented comfort and opportunity."
+    },
+    {
+      "type": "detail",
+      "text": "The phenomenon appears across life domains. New car excitement fades to routine within months. Dream homes become normal. Even relationships show hedonic adaptation - the intense excitement of new love mellows into comfortable companionship (though this adaptation can be slower and varies between couples). The initial dopamine rush from any achievement or acquisition inevitably diminishes."
+    },
+    {
+      "type": "key_point",
+      "text": "Research identifies exceptions - events that don't show full adaptation. Chronic pain, noise, and long commutes persistently reduce happiness without complete adaptation. Positive exceptions include strong social relationships, meaningful work, and activities that provide continual novelty. The key seems to be whether the experience remains engaging rather than becoming routine background."
+    },
+    {
+      "type": "example",
+      "text": "The treadmill explains 'lifestyle inflation.' People earning $50,000 think they'd be happy with $100,000. Those earning $100,000 feel they need $200,000. At each level, people adapt to their circumstances and recalibrate expectations upward. Billionaires report similar satisfaction levels as middle-class people - their reference points have simply shifted. The goalpost keeps moving."
+    },
+    {
+      "type": "detail",
+      "text": "Understanding the treadmill suggests different happiness strategies. Instead of pursuing hedonic pleasures that spark and fade, focus on eudaimonic wellbeing - meaning, growth, relationships, and contribution. These provide sustained satisfaction. Gratitude practices work by interrupting adaptation, actively noticing what you have. Novel experiences resist adaptation better than material possessions."
+    },
+    {
+      "type": "highlight",
+      "text": "The 'arrival fallacy' is related - believing you'll be happy when you achieve X. But achieving X just moves the goalpost to Y. Olympic medalists show this clearly: bronze medalists are often happier than silver medalists. Bronze is happy to medal; silver is disappointed they didn't win gold. Our reference point shapes satisfaction more than objective achievement."
+    },
+    {
+      "type": "detail",
+      "text": "Some adaptation is desirable - it helps us cope with adversity and prevents complacency. The problem is over-adaptation to positive events while under-adapting to negative ones. Savoring - deliberately prolonging positive experiences through attention and appreciation - can slow hedonic adaptation. So can variety and intermittent rather than constant indulgence."
+    },
+    {
+      "type": "summary",
+      "text": "The hedonic treadmill isn't a defect; it's a feature of human psychology that kept our ancestors striving. But in affluent societies where survival needs are met, it can trap us in perpetual dissatisfaction, always pursuing the next thing that will 'finally' make us happy. Understanding this doesn't eliminate the treadmill, but it can shift focus from hedonic pursuits to sources of meaning and connection that provide deeper, more sustained satisfaction. The key is not escaping the treadmill but learning which treadmills are worth running on."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the hedonic treadmill?",
+      "options": [
+        "A new exercise machine",
+        "Tendency to return to a stable happiness level despite major life changes",
+        "A type of therapy",
+        "Progressive difficulty in achieving goals"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The hedonic treadmill is our tendency to return to a relatively stable level of happiness despite major positive or negative life changes."
+    },
+    {
+      "question": "What do studies of lottery winners show?",
+      "options": [
+        "They're permanently much happier",
+        "They become depressed",
+        "They eventually return to near their original happiness levels",
+        "They become addicted to gambling"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Studies show lottery winners eventually return to near their original happiness levels as they adapt to wealth - demonstrating the hedonic treadmill effect."
+    },
+    {
+      "question": "What is 'lifestyle inflation'?",
+      "options": [
+        "Economic inflation",
+        "As income rises, people adapt and recalibrate expectations upward",
+        "Cost of living increases",
+        "Population growth"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Lifestyle inflation occurs when people adapt to higher income levels and recalibrate their expectations upward, always feeling they need more to be satisfied."
+    },
+    {
+      "question": "What is the 'arrival fallacy'?",
+      "options": [
+        "Getting lost when traveling",
+        "Believing you'll be happy when you achieve X, but then just pursuing Y",
+        "Thinking you've arrived somewhere you haven't",
+        "Fear of reaching destinations"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The arrival fallacy is believing you'll be happy when you achieve a goal, but achieving it just moves the goalpost to the next goal."
+    },
+    {
+      "question": "Which provides more sustained satisfaction according to research?",
+      "options": [
+        "Material possessions",
+        "Winning awards",
+        "Eudaimonic wellbeing - meaning, growth, relationships, contribution",
+        "Luxury vacations"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Eudaimonic wellbeing - including meaning, growth, relationships, and contribution - provides more sustained satisfaction than hedonic pleasures that quickly adapt."
+    }
+  ]
+}

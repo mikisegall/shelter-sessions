@@ -1,0 +1,107 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440003",
+  "title": "The Real Story of the Trojan Horse",
+  "category": "history",
+  "estimatedReadingTime": 13,
+  "createdAt": "2026-03-14T08:00:00Z",
+  "tags": ["ancient-history", "mythology", "warfare", "greece"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "The Trojan Horse is one of history's most famous stories: Greek soldiers hiding inside a giant wooden horse to infiltrate the city of Troy. But did it really happen? The truth is more complex and fascinating than the legend, blending historical warfare, literary embellishment, and archaeological mystery."
+    },
+    {
+      "type": "key_point",
+      "text": "The Trojan War itself likely happened around 1200 BCE. Archaeological evidence shows that a city matching Homer's description of Troy existed in modern-day Turkey and was indeed destroyed by fire. However, we have no contemporary records of the war - our earliest sources come from Homer's Iliad and Odyssey, written 400-500 years after the supposed events."
+    },
+    {
+      "type": "highlight",
+      "text": "Here's the surprising part: Homer's Iliad, despite being about the Trojan War, never mentions the Trojan Horse! The famous horse story appears in the Odyssey, a sequel to the Iliad, and in later works by Roman poets like Virgil. It seems the horse tale grew in the retelling over centuries."
+    },
+    {
+      "type": "detail",
+      "text": "According to the legend, after ten years of unsuccessful siege, the Greeks built a massive wooden horse as a supposed offering to the goddess Athena. They hid elite soldiers inside, then sailed away, pretending to abandon the war. The Trojans, believing they'd won, brought the horse inside their city walls as a trophy."
+    },
+    {
+      "type": "example",
+      "text": "That night, the Greek soldiers emerged from the horse and opened Troy's gates for their army, which had secretly returned under cover of darkness. The city was destroyed, ending the war. The Trojan priest Laocoön had warned, 'Beware of Greeks bearing gifts' - but no one listened until it was too late."
+    },
+    {
+      "type": "key_point",
+      "text": "So did it actually happen? Probably not as described. Ancient warfare sometimes used deception tactics, and scholars have proposed several theories: Maybe the 'horse' was actually a siege engine or battering ram that looked horse-like. Perhaps it was a metaphor for a secret gate or weakness in Troy's walls. Or maybe earthquakes (Poseidon, god of earthquakes, was also god of horses) helped destroy Troy."
+    },
+    {
+      "type": "detail",
+      "text": "Another theory: The horse might represent Greek ships. In ancient Greek, the same word could mean both 'horse' and 'ship's hull.' Greek ships had horse-head decorations on their bows. Maybe Greek sailors hiding in ships pulled onto the beach got transformed into soldiers hiding in a wooden horse through centuries of storytelling."
+    },
+    {
+      "type": "highlight",
+      "text": "The archaeologist who discovered Troy's ruins, Heinrich Schliemann, was so convinced by Homer's descriptions that he used the Iliad as a treasure map. In 1870, he found multiple layers of ancient cities at Hisarlik, Turkey. One layer showed extensive fire damage dating to around 1200 BCE - consistent with the traditional date of Troy's fall."
+    },
+    {
+      "type": "detail",
+      "text": "Whether or not the horse was real, its legacy is undeniable. 'Trojan horse' now means any trick that causes a target to invite an enemy into a secure place - from computer viruses to political strategies. The term 'Trojan horse' malware, software that appears legitimate but contains hidden threats, directly references this ancient story."
+    },
+    {
+      "type": "summary",
+      "text": "The Trojan Horse sits at the intersection of history and legend. There was probably a real war between Greeks and Trojans, and Troy was definitely destroyed. But the wooden horse story likely evolved through centuries of oral tradition, mixing real events with literary embellishment. Like many ancient tales, it preserves a kernel of historical truth wrapped in layers of mythology - and remains a powerful warning about deception and overconfidence."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Where does the famous Trojan Horse story actually appear in ancient literature?",
+      "options": [
+        "Homer's Iliad",
+        "Homer's Odyssey and later Roman works",
+        "Plato's Republic",
+        "The Bible"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Surprisingly, the Iliad doesn't mention the Trojan Horse. The story appears in Homer's Odyssey and was later expanded by Roman poets like Virgil, suggesting it developed over time."
+    },
+    {
+      "question": "When did the Trojan War likely occur?",
+      "options": [
+        "500 BCE",
+        "1200 BCE",
+        "2000 BCE",
+        "100 CE"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Archaeological and historical evidence suggests the Trojan War, if it happened, occurred around 1200 BCE, during the late Bronze Age collapse."
+    },
+    {
+      "question": "What alternative theory suggests what the 'horse' might really have been?",
+      "options": [
+        "A religious statue",
+        "A type of Greek god",
+        "A siege engine or battering ram",
+        "A celebration parade"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Some scholars believe the 'horse' might have been a siege engine or battering ram that resembled a horse, or even a metaphor for Greek ships, rather than the literal wooden horse of legend."
+    },
+    {
+      "question": "Who was the archaeologist that used Homer's Iliad to discover Troy's ruins?",
+      "options": [
+        "Howard Carter",
+        "Indiana Jones",
+        "Heinrich Schliemann",
+        "Arthur Evans"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Heinrich Schliemann used Homer's descriptions in the Iliad as a guide to discover ancient Troy at Hisarlik, Turkey in 1870, proving the city existed."
+    },
+    {
+      "question": "What modern term comes from the Trojan Horse story?",
+      "options": [
+        "Firewall",
+        "Trojan horse malware",
+        "Spam email",
+        "Cloud computing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Trojan horse malware - software that appears legitimate but contains hidden threats - is named directly after the ancient Greek deception strategy."
+    }
+  ]
+}

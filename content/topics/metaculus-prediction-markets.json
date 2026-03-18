@@ -1,0 +1,107 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440018",
+  "title": "Prediction Markets: Betting on the Future",
+  "category": "technology",
+  "estimatedReadingTime": 12,
+  "createdAt": "2026-03-18T12:00:00Z",
+  "tags": ["technology", "forecasting", "economics", "probability", "decision-making"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "What if you could bet on whether AI will achieve human-level intelligence by 2030? Or whether there will be a major earthquake in California next year? Prediction markets let people trade contracts based on future events, and they've proven surprisingly accurate - often outperforming expert predictions, polls, and traditional forecasting methods. By harnessing collective intelligence and putting money where your mouth is, these markets reveal what people really believe will happen."
+    },
+    {
+      "type": "key_point",
+      "text": "The logic is simple: if you're wrong, you lose money; if you're right, you profit. This incentive to be accurate filters out wishful thinking and virtue signaling. Someone might tell pollsters they think their candidate will win, but their real beliefs show in where they put their money. Prediction markets aggregate this honest information from thousands of participants, producing probability estimates for future events."
+    },
+    {
+      "type": "highlight",
+      "text": "Prediction markets famously outperformed polls in forecasting elections. In 2020, while polls showed Biden with a solid lead, prediction markets showed a closer race - and were more accurate about the final margin. During Brexit, polls were split, but prediction markets correctly gave 'Leave' higher odds than conventional wisdom suggested. Markets process information faster and more efficiently than expert analysis."
+    },
+    {
+      "type": "detail",
+      "text": "Platforms like Manifold Markets, Metaculus, and Polymarket let users bet on everything from tech company valuations to climate milestones to geopolitical events. Some are play-money platforms where reputation matters; others use cryptocurrency for real stakes. The key innovation is making predictions quantifiable and trackable, forcing accountability."
+    },
+    {
+      "type": "key_point",
+      "text": "The wisdom of crowds works through diversity and independence. If 1,000 people with different information and perspectives bet on an outcome, their aggregate prediction often beats any single expert. But this breaks down if everyone follows the same sources, creating information cascades where people bet based on what others are betting, not independent analysis. Diverse perspectives are crucial."
+    },
+    {
+      "type": "example",
+      "text": "Google and other tech companies run internal prediction markets where employees bet on product launch dates, project success, and company metrics. These markets often reveal problems leadership doesn't see - engineers might bet a project will be delayed, signaling issues before they become critical. It's a way to harvest honest opinions from people who know but might not speak up in meetings."
+    },
+    {
+      "type": "detail",
+      "text": "Criticism exists. Real-money markets face legal restrictions in many countries, classified as gambling. Low-liquidity markets can be manipulated by wealthy participants. Markets can only predict observable, resolvable outcomes - they can't forecast things like 'will this policy improve welfare' if welfare is poorly defined. And they may create perverse incentives to influence outcomes you've bet on."
+    },
+    {
+      "type": "highlight",
+      "text": "Superforecasters - people who consistently outperform others at prediction - share traits: they think probabilistically, update beliefs based on evidence, break complex questions into parts, and avoid overconfidence. Platforms like Metaculus track forecaster accuracy over thousands of predictions, identifying these individuals. Organizations increasingly hire top forecasters for strategic planning."
+    },
+    {
+      "type": "detail",
+      "text": "Prediction markets might improve decision-making at scale. Imagine using them to estimate the risk of new medical treatments, infrastructure project completion dates, or the likelihood of supply chain disruptions. By aggregating dispersed knowledge and creating accountability for accuracy, markets could reduce reliance on biased experts or wishful planning. The key is proper design and sufficient participation."
+    },
+    {
+      "type": "summary",
+      "text": "Prediction markets represent a new tool for collective intelligence. By aligning incentives toward accuracy and aggregating diverse information, they often outperform traditional forecasting. As more organizations and governments experiment with them, we're learning how to harness distributed knowledge for better decisions. The future might involve not just predicting elections or sports, but using markets to forecast technology trajectories, climate risks, and policy outcomes - essentially democratizing and quantifying our collective best guesses about what's coming."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why do prediction markets often outperform polls?",
+      "options": [
+        "They have more participants",
+        "They're regulated by governments",
+        "People risk money, incentivizing honest beliefs over wishful thinking",
+        "They use better computers"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Prediction markets incentivize accuracy because participants risk losing money if wrong, filtering out wishful thinking and virtue signaling that can skew traditional polls."
+    },
+    {
+      "question": "What are 'superforecasters'?",
+      "options": [
+        "Weather prediction experts",
+        "People who consistently outperform others at prediction",
+        "AI prediction systems",
+        "Professional gamblers"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Superforecasters are individuals who consistently outperform others at prediction by thinking probabilistically, updating beliefs based on evidence, and avoiding overconfidence."
+    },
+    {
+      "question": "How do some tech companies use internal prediction markets?",
+      "options": [
+        "For employee gambling",
+        "To replace all meetings",
+        "To harvest honest opinions about projects and timelines from employees",
+        "To set stock prices"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Companies like Google run internal prediction markets where employees bet on product launches and project success, revealing honest opinions and potential problems."
+    },
+    {
+      "question": "What makes 'wisdom of crowds' work in prediction markets?",
+      "options": [
+        "Having as many people as possible",
+        "Having experts only",
+        "Having diverse and independent perspectives",
+        "Having the same information sources"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Wisdom of crowds works through diversity and independence - when people with different information and perspectives contribute, their aggregate prediction often beats any single expert."
+    },
+    {
+      "question": "What is a major limitation of prediction markets?",
+      "options": [
+        "They can't predict the weather",
+        "They can only predict observable, resolvable outcomes",
+        "They're always wrong",
+        "They're too slow"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prediction markets can only forecast observable, resolvable outcomes with clear resolution criteria - they struggle with poorly defined or unobservable questions."
+    }
+  ]
+}

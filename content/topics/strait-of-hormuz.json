@@ -1,0 +1,107 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440013",
+  "title": "Strait of Hormuz: The World's Most Important Oil Chokepoint",
+  "category": "geopolitics",
+  "estimatedReadingTime": 12,
+  "createdAt": "2026-03-18T10:45:00Z",
+  "tags": ["geopolitics", "energy", "middle-east", "iran", "trade"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "At its narrowest point, it's just 21 miles wide. Yet this slim waterway between Iran and Oman carries 21 million barrels of oil per day - about 21% of global petroleum consumption. The Strait of Hormuz is the world's most strategic chokepoint, and any disruption would send shockwaves through the global economy within hours."
+    },
+    {
+      "type": "key_point",
+      "text": "The strait connects the Persian Gulf to the Gulf of Oman and the Arabian Sea. Oil tankers from Saudi Arabia, Iraq, UAE, Kuwait, and Qatar must pass through it to reach global markets. If the strait closed, oil prices would spike immediately - some estimates suggest $200+ per barrel. In 2019, when attacks on tankers raised closure fears, oil prices jumped 4% in a single day."
+    },
+    {
+      "type": "highlight",
+      "text": "Iran has repeatedly threatened to close the strait during conflicts. It has the capability to do so, at least temporarily, using mines, missiles, small boats, and submarines. Iran's Revolutionary Guard trains for asymmetric warfare in the strait - think swarms of small attack boats with missiles, not traditional naval battles. In 2019, Iran seized a British tanker in retaliation for the UK detaining an Iranian vessel."
+    },
+    {
+      "type": "detail",
+      "text": "The shipping lanes are surprisingly narrow. While the strait is 21 miles wide overall, the actual navigable channels are only 2 miles wide in each direction, separated by a 2-mile buffer zone. Tankers are essentially sitting ducks - massive, slow-moving targets in confined waters. A single sunken tanker could block traffic for weeks."
+    },
+    {
+      "type": "key_point",
+      "text": "The United States Fifth Fleet, based in nearby Bahrain, exists largely to keep the strait open. The US has stated that freedom of navigation through Hormuz is a vital national interest and has conducted numerous operations to escort tankers. Yet military experts debate whether even US forces could quickly clear the strait if Iran seriously attempted closure."
+    },
+    {
+      "type": "example",
+      "text": "In 2015, Iran seized a container ship transiting the strait, claiming it owed money to an Iranian company. In 2016, Iran detained 10 US sailors whose boats drifted into Iranian waters. In 2019, multiple tankers were attacked with limpet mines. Each incident demonstrates how easily tensions can escalate in this confined space where Iranian and international forces operate in close proximity."
+    },
+    {
+      "type": "detail",
+      "text": "Regional nations have built bypass pipelines to reduce dependence on the strait. The UAE operates pipelines that can transport oil directly to the Gulf of Oman. Saudi Arabia has pipelines to Red Sea ports. But these have limited capacity - they can't replace the strait's throughput. They're insurance policies, not alternatives."
+    },
+    {
+      "type": "highlight",
+      "text": "The strait's importance is declining slowly due to changing energy markets. US shale oil production reduced Western dependence on Persian Gulf oil. China and India are now the primary customers, importing over 90% of the oil that flows through Hormuz. This shift is subtly changing the geopolitics - who would bear the cost of keeping the strait open?"
+    },
+    {
+      "type": "detail",
+      "text": "Beyond oil, liquefied natural gas (LNG) flows through the strait in increasing volumes. Qatar, the world's largest LNG exporter, ships almost all its gas through Hormuz. Japan and South Korea depend heavily on this LNG for electricity generation. A closure wouldn't just affect oil prices - it would create energy crises across Asia."
+    },
+    {
+      "type": "summary",
+      "text": "The Strait of Hormuz embodies how geography shapes global power. A narrow waterway controlled by one nation affects the daily lives of billions. Iran's strategic position gives it leverage far beyond its economic or military power. As long as the world runs on oil and gas from the Persian Gulf, the strait will remain a flashpoint where local conflicts can instantly become global crises."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "How much of global oil consumption passes through the Strait of Hormuz?",
+      "options": [
+        "5%",
+        "10%",
+        "21%",
+        "50%"
+      ],
+      "correctAnswer": 2,
+      "explanation": "About 21% of global petroleum consumption - approximately 21 million barrels per day - passes through the Strait of Hormuz."
+    },
+    {
+      "question": "How wide are the navigable shipping lanes in each direction through the strait?",
+      "options": [
+        "Only 2 miles wide",
+        "10 miles wide",
+        "21 miles wide",
+        "50 miles wide"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Despite the strait being 21 miles wide overall, the actual navigable channels are only 2 miles wide in each direction, making vessels vulnerable."
+    },
+    {
+      "question": "What military force is primarily responsible for keeping the strait open?",
+      "options": [
+        "NATO fleet",
+        "United Nations forces",
+        "US Fifth Fleet",
+        "British Royal Navy"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The United States Fifth Fleet, based in Bahrain, exists largely to maintain freedom of navigation through the Strait of Hormuz."
+    },
+    {
+      "question": "Which countries are now the primary customers for oil flowing through Hormuz?",
+      "options": [
+        "United States and Europe",
+        "China and India",
+        "Japan and South Korea only",
+        "Russia and Brazil"
+      ],
+      "correctAnswer": 1,
+      "explanation": "China and India are now the primary customers, importing over 90% of the oil that flows through Hormuz, shifting the geopolitical dynamics."
+    },
+    {
+      "question": "What besides oil increasingly flows through the strait in large volumes?",
+      "options": [
+        "Coal",
+        "Liquefied natural gas (LNG)",
+        "Wheat",
+        "Automobiles"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Liquefied natural gas (LNG), particularly from Qatar, increasingly flows through the strait, making it critical for energy security beyond just oil."
+    }
+  ]
+}
