@@ -28,6 +28,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "type-check": "tsc --noEmit",
+    "generate-manifest": "node scripts/generate-manifest.js",
     "validate-build": "bash scripts/validate-build.sh",
     "prebuild": "npm run validate-build"
   },

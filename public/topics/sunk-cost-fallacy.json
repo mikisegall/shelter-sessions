@@ -1,0 +1,107 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440022",
+  "title": "The Sunk Cost Fallacy: Why We Can't Let Go",
+  "category": "psychology",
+  "estimatedReadingTime": 12,
+  "createdAt": "2026-03-18T13:00:00Z",
+  "tags": ["psychology", "decision-making", "behavioral-economics", "cognitive-bias", "rationality"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "You've watched an hour of a terrible movie. Do you leave or sit through another hour because you've 'already invested the time'? You've spent $10,000 restoring a car that still doesn't run, and the mechanic wants another $5,000. Do you pay it to not 'waste' what you've already spent? The sunk cost fallacy is our irrational tendency to continue investing in something because of what we've already put in, even when walking away is clearly better."
+    },
+    {
+      "type": "key_point",
+      "text": "Rational decision-making considers only future costs and benefits, not past investments. Money or time already spent is gone regardless of what you do next. If the movie is terrible, watching another hour won't make the first hour less wasted - it just wastes another hour. But our psychology rebels against 'wasting' investments, trapping us in escalating commitments to failing projects, relationships, or careers."
+    },
+    {
+      "type": "highlight",
+      "text": "The Concorde jet is the classic example. Britain and France kept funding the supersonic aircraft despite mounting evidence it would never be profitable. They had invested so much money and national prestige that stopping felt like admitting failure. The project became known as the 'Concorde Fallacy' in economics - throwing good money after bad. It flew for 27 years but never made a profit."
+    },
+    {
+      "type": "detail",
+      "text": "Businesses fall prey constantly. Companies pour money into failing products rather than cutting losses. Marketing campaigns that aren't working continue because 'we've already spent so much.' Tech companies refuse to abandon legacy systems they've invested in, even when replacement would be cheaper long-term. The reluctance to 'admit defeat' costs billions."
+    },
+    {
+      "type": "key_point",
+      "text": "Why do we do this? Loss aversion - losses hurt more than equivalent gains feel good. Admitting a sunk cost means accepting a definite loss, which feels terrible. Continuing offers the hope (however slim) of eventual success that would 'justify' the investment. We also fear appearing wasteful or inconsistent. Changing course feels like admitting we were wrong."
+    },
+    {
+      "type": "example",
+      "text": "Relationships demonstrate this powerfully. People stay in unhappy relationships because they've invested years and don't want those years to be 'wasted.' But the years are already gone. The only question is: do you want to spend future years unhappy too? The past investment is irrelevant to whether the relationship serves you going forward. Yet leaving feels like 'throwing away' what you built."
+    },
+    {
+      "type": "detail",
+      "text": "Education shows similar patterns. Students continue degrees they hate because they've 'come this far.' But if you hate the field, do you really want to work in it for decades to justify two years of study? Career changes face similar resistance - the years training for profession X feel wasted if you switch to profession Y, even if Y would make you much happier."
+    },
+    {
+      "type": "highlight",
+      "text": "Interestingly, we're better at recognizing the fallacy in others. When advising friends, we correctly say 'just leave the movie' or 'cut your losses.' But with our own decisions, emotional investment blinds us. We feel the weight of sunk costs even while intellectually knowing they're irrelevant. Knowing about the bias doesn't fully protect against it."
+    },
+    {
+      "type": "detail",
+      "text": "Some strategies help: frame decisions as if starting fresh - would you make this investment today, knowing what you know? Ask what advice you'd give a friend in your situation. Calculate opportunity costs - what else could you do with future resources? Set predetermined exit criteria before investing. Organizations can combat it by separating decision-makers who evaluate continuing from those who made initial investments."
+    },
+    {
+      "type": "summary",
+      "text": "The sunk cost fallacy keeps us chained to past decisions, preventing us from making better future ones. It reflects our deep psychological need to justify our investments and avoid admitting losses. But past costs are gone; only future costs and benefits matter. Recognizing this intellectually is easy; acting on it emotionally is hard. The wisdom is learning to ask not 'How much have I invested?' but 'What should I do going forward?' The past is unchangeable; the future is yours to shape wisely."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the sunk cost fallacy?",
+      "options": [
+        "Investing in successful projects",
+        "Continuing to invest in something because of what you've already put in",
+        "Saving money for the future",
+        "Avoiding all investments"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The sunk cost fallacy is the tendency to continue investing in something because of what you've already invested, even when walking away would be better."
+    },
+    {
+      "question": "What should rational decision-making consider?",
+      "options": [
+        "Only past investments",
+        "Only emotional factors",
+        "Only future costs and benefits",
+        "What others think"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Rational decision-making should consider only future costs and benefits, not past investments that are already gone regardless of future choices."
+    },
+    {
+      "question": "What famous aircraft is used as a classic example of the sunk cost fallacy?",
+      "options": [
+        "Boeing 747",
+        "Concorde",
+        "Airbus A380",
+        "Wright Flyer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The Concorde supersonic jet is the classic example, where Britain and France kept funding it despite evidence it would never be profitable, leading to the term 'Concorde Fallacy.'"
+    },
+    {
+      "question": "Why do we fall for the sunk cost fallacy?",
+      "options": [
+        "We're bad at math",
+        "Loss aversion - losses hurt more than gains feel good",
+        "We don't care about money",
+        "We love wasting resources"
+      ],
+      "correctAnswer": 1,
+      "explanation": "We fall for the sunk cost fallacy partly due to loss aversion - admitting a sunk cost means accepting a definite loss, which psychologically hurts more than equivalent gains feel good."
+    },
+    {
+      "question": "What is one strategy to combat the sunk cost fallacy?",
+      "options": [
+        "Never start new projects",
+        "Always finish everything you start",
+        "Frame decisions as if starting fresh today",
+        "Ignore all advice"
+      ],
+      "correctAnswer": 2,
+      "explanation": "One effective strategy is to frame decisions as if starting fresh - ask yourself if you would make this investment today, knowing what you know now."
+    }
+  ]
+}

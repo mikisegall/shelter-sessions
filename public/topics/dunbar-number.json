@@ -1,0 +1,107 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440020",
+  "title": "Dunbar's Number: Why You Can Only Have 150 Friends",
+  "category": "psychology",
+  "estimatedReadingTime": 12,
+  "createdAt": "2026-03-18T12:30:00Z",
+  "tags": ["psychology", "sociology", "neuroscience", "relationships", "anthropology"],
+  "contentBlocks": [
+    {
+      "type": "intro",
+      "text": "How many people can you really know? Not just recognize, but actually maintain meaningful relationships with? British anthropologist Robin Dunbar proposed that humans can maintain stable social relationships with about 150 people. This isn't arbitrary - it's linked to the size of our neocortex and observable throughout history, from hunter-gatherer bands to modern military units. Even in the age of social media, our brains might have hard cognitive limits on friendship."
+    },
+    {
+      "type": "key_point",
+      "text": "Dunbar discovered his number by studying primates. He found a correlation between primate brain size (specifically neocortex ratio) and social group size. Larger brains allow for larger social groups because maintaining relationships requires cognitive resources - remembering individuals, tracking alliances, understanding social hierarchies. Applying this to human brain size predicts a natural group size of around 150."
+    },
+    {
+      "type": "highlight",
+      "text": "Archaeological and historical evidence supports this number remarkably. Neolithic villages typically had 150 people. Roman military units (centuries) contained 120-150 soldiers. Hutterite communities split when they reach 150 members. Gore-Tex operates plants with maximum 150 employees per building. When groups exceed this size, maintaining cohesion requires formal hierarchies and rules instead of informal relationships."
+    },
+    {
+      "type": "detail",
+      "text": "Dunbar proposed layers within the 150: an inner circle of 5 intimate friends, a layer of 15 good friends, 50 friends, and 150 meaningful contacts. Each layer takes proportionally less time to maintain but still requires regular interaction. Beyond 150 are 500 acquaintances you'd recognize, and 1,500 people you could put names to faces. These layers correspond to different levels of emotional closeness and contact frequency."
+    },
+    {
+      "type": "key_point",
+      "text": "Social media challenged Dunbar's number. Facebook users have hundreds or thousands of 'friends.' But research shows that despite large networks, people still maintain close relationships with about 4-6 people, good relationships with 15-20, and meaningful contact with 100-150. The medium changes; the cognitive constraint doesn't. Most Facebook friends are weak ties, not the stable relationships Dunbar described."
+    },
+    {
+      "type": "example",
+      "text": "When researchers analyzed Facebook data, they found users consistently interacted with fewer than 150 people, despite having many more friends. Phone records show people regularly call about 5-15 people. The Christmas card list study - before email - found most people sent cards to 100-150 households. Across different technologies and time periods, the pattern holds."
+    },
+    {
+      "type": "detail",
+      "text": "Why the limit? Maintaining relationships requires time and mental energy. You need to remember details about people's lives, empathize with their experiences, and invest in mutual support. The brain's capacity for modeling other minds ('theory of mind') appears constrained. Some people might maintain 200 relationships; others only 100. But on average, 150 emerges consistently."
+    },
+    {
+      "type": "highlight",
+      "text": "This has organizational implications. Companies exceeding 150 employees often see culture shift from personal relationships to formal structures. Early-stage startups where everyone knows everyone behave differently than large corporations with hierarchies and bureaucracy. Some successful companies deliberately maintain small autonomous teams (the 'two-pizza team' rule) to preserve relationship density."
+    },
+    {
+      "type": "detail",
+      "text": "Critics argue Dunbar's number is too rigid. Cultural factors matter - collectivist cultures might maintain larger networks; individualist cultures smaller ones. Introverts and extroverts differ. The number might represent an average with wide variation. But even critics acknowledge humans have some cognitive limit on relationship quantity, even if debating the exact number."
+    },
+    {
+      "type": "summary",
+      "text": "Dunbar's number suggests that despite modern technology, we remain constrained by ancient cognitive architecture. Our brains evolved for small-group living, and no amount of digital connection changes our fundamental capacity for relationships. This isn't pessimistic - it's realistic. Understanding our limits helps us invest wisely in relationships that matter rather than spreading ourselves thin across hundreds of superficial connections. In the attention economy, recognizing we can only maintain 150 meaningful relationships is actually liberating."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is Dunbar's number?",
+      "options": [
+        "50 people",
+        "150 people",
+        "500 people",
+        "1000 people"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dunbar's number is approximately 150 - the proposed cognitive limit on the number of stable social relationships humans can maintain."
+    },
+    {
+      "question": "How did Robin Dunbar originally discover his number?",
+      "options": [
+        "By studying Facebook users",
+        "By studying primate brain size and social group size correlations",
+        "By analyzing ancient texts",
+        "By interviewing people about friendships"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dunbar discovered his number by studying the correlation between primate brain size (neocortex ratio) and social group size, then applying it to humans."
+    },
+    {
+      "question": "According to Dunbar's layers, how many people are in the innermost circle of intimate friends?",
+      "options": [
+        "2 people",
+        "5 people",
+        "15 people",
+        "50 people"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dunbar proposed concentric layers with an inner circle of about 5 intimate friends, followed by layers of 15 good friends, 50 friends, and 150 meaningful contacts."
+    },
+    {
+      "question": "What happens when organizations exceed 150 people?",
+      "options": [
+        "Nothing changes",
+        "They become more efficient",
+        "They typically shift from personal relationships to formal hierarchies",
+        "They always fail"
+      ],
+      "correctAnswer": 2,
+      "explanation": "When groups exceed about 150 people, maintaining cohesion typically requires shifting from informal personal relationships to formal hierarchies and rules."
+    },
+    {
+      "question": "What do Facebook studies show about Dunbar's number in the social media age?",
+      "options": [
+        "Dunbar's number is completely wrong",
+        "People maintain close relationships with thousands online",
+        "Despite large networks, people still meaningfully interact with about 100-150 people",
+        "Social media allows unlimited relationships"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Facebook research shows that despite having hundreds of 'friends,' people still maintain meaningful regular contact with about 100-150 people, consistent with Dunbar's number."
+    }
+  ]
+}

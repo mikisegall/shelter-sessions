@@ -1,25 +1,214 @@
 {
   "version": "2.0.0",
-  "lastUpdated": "2026-03-14T18:00:00Z",
+  "lastUpdated": "2026-03-20T13:37:07.178Z",
   "topics": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440025",
+      "filename": "hedonic-treadmill.json",
+      "title": "The Hedonic Treadmill: Why Happiness Doesn't Last",
+      "category": "psychology",
+      "addedDate": "2026-03-18T13:45:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440024",
+      "filename": "kessler-syndrome.json",
+      "title": "Kessler Syndrome: The Space Debris Cascade",
+      "category": "science",
+      "addedDate": "2026-03-18T13:30:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440023",
+      "filename": "mitochondrial-eve.json",
+      "title": "Mitochondrial Eve: The Woman All Humans Descend From",
+      "category": "science",
+      "addedDate": "2026-03-18T13:15:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440022",
+      "filename": "sunk-cost-fallacy.json",
+      "title": "The Sunk Cost Fallacy: Why We Can't Let Go",
+      "category": "psychology",
+      "addedDate": "2026-03-18T13:00:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440021",
+      "filename": "sahel-geopolitics.json",
+      "title": "The Sahel: Africa's Forgotten Geopolitical Battleground",
+      "category": "geopolitics",
+      "addedDate": "2026-03-18T12:45:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440020",
+      "filename": "dunbar-number.json",
+      "title": "Dunbar's Number: Why You Can Only Have 150 Friends",
+      "category": "psychology",
+      "addedDate": "2026-03-18T12:30:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440019",
+      "filename": "taiwan-semiconductor-geopolitics.json",
+      "title": "TSMC: The Most Important Company You've Never Heard Of",
+      "category": "geopolitics",
+      "addedDate": "2026-03-18T12:15:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440018",
+      "filename": "metaculus-prediction-markets.json",
+      "title": "Prediction Markets: Betting on the Future",
+      "category": "technology",
+      "addedDate": "2026-03-18T12:00:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440017",
+      "filename": "microbiome.json",
+      "title": "Your Microbiome: The Other 99% of Your DNA",
+      "category": "science",
+      "addedDate": "2026-03-18T11:45:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440016",
+      "filename": "double-slit-experiment.json",
+      "title": "The Double-Slit Experiment: Reality's Weirdest Test",
+      "category": "science",
+      "addedDate": "2026-03-18T11:30:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440015",
+      "filename": "placebo-effect.json",
+      "title": "The Placebo Effect: Your Brain's Pharmacy",
+      "category": "psychology",
+      "addedDate": "2026-03-18T11:15:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440014",
+      "filename": "fermi-paradox.json",
+      "title": "The Fermi Paradox: Where Is Everybody?",
+      "category": "science",
+      "addedDate": "2026-03-18T11:00:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440013",
+      "filename": "strait-of-hormuz.json",
+      "title": "Strait of Hormuz: The World's Most Important Oil Chokepoint",
+      "category": "geopolitics",
+      "addedDate": "2026-03-18T10:45:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440012",
+      "filename": "arctic-geopolitics.json",
+      "title": "The New Cold War: Arctic Geopolitics",
+      "category": "geopolitics",
+      "addedDate": "2026-03-18T10:30:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440011",
+      "filename": "rare-earth-elements-geopolitics.json",
+      "title": "Rare Earth Elements: The Hidden Geopolitical Battle",
+      "category": "geopolitics",
+      "addedDate": "2026-03-18T10:15:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440010",
+      "filename": "belt-and-road-initiative.json",
+      "title": "China's Belt and Road Initiative: Modern Silk Road",
+      "category": "geopolitics",
+      "addedDate": "2026-03-18T10:00:00Z"
+    },
     {
       "id": "crispr-gene-editing",
       "filename": "crispr-gene-editing.json",
       "title": "How CRISPR Gene Editing Works",
       "category": "science",
+      "addedDate": "2026-03-14T08:00:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440002",
+      "filename": "git-version-control.json",
+      "title": "The Story Behind Git's Creation",
+      "category": "technology",
+      "addedDate": "2026-03-14T08:00:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440004",
+      "filename": "japanese-breakfast.json",
+      "title": "Why Japanese Breakfast is So Different",
+      "category": "culture",
+      "addedDate": "2026-03-14T08:00:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440005",
+      "filename": "paradox-of-choice.json",
+      "title": "The Paradox of Choice",
+      "category": "philosophy",
+      "addedDate": "2026-03-14T08:00:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440003",
+      "filename": "trojan-horse.json",
+      "title": "The Real Story of the Trojan Horse",
+      "category": "history",
+      "addedDate": "2026-03-14T08:00:00Z"
+    },
+    {
+      "id": "ai-alignment-2024",
+      "filename": "ai-alignment-problem.json",
+      "title": "AI Alignment: When Claude Learns to Lie",
+      "category": "technology",
+      "addedDate": "2026-03-14T00:00:00Z"
+    },
+    {
+      "id": "argentina-milei-inflation-2024",
+      "filename": "argentina-milei-inflation-2024.json",
+      "title": "Argentina's Shock Therapy: Milei's Chainsaw Meets 200% Inflation",
+      "category": "economics",
+      "addedDate": "2026-03-14T00:00:00Z"
+    },
+    {
+      "id": "armenia-azerbaijan-2023",
+      "filename": "armenia-azerbaijan-2023.json",
+      "title": "Nagorno-Karabakh's Fall: When Ethnic Cleansing Meets Geopolitical Indifference",
+      "category": "geopolitics",
+      "addedDate": "2026-03-14T00:00:00Z"
+    },
+    {
+      "id": "china-property-evergrande-2024",
+      "filename": "china-property-evergrande-2024.json",
+      "title": "Evergrande's Collapse: China's $60 Trillion Property Reckoning",
+      "category": "economics",
+      "addedDate": "2026-03-14T00:00:00Z"
+    },
+    {
+      "id": "credit-suisse-collapse-2023",
+      "filename": "credit-suisse-collapse-2023.json",
+      "title": "Credit Suisse's Death Spiral: When a 167-Year Bank Dies in Days",
+      "category": "finance",
+      "addedDate": "2026-03-14T00:00:00Z"
+    },
+    {
+      "id": "ftx-sbf-collapse-2022",
+      "filename": "ftx-sbf-collapse-2022.json",
+      "title": "FTX's Implosion: The $32 Billion Fraud That Fooled Everyone",
+      "category": "finance",
+      "addedDate": "2026-03-14T00:00:00Z"
+    },
+    {
+      "id": "gamestop-short-squeeze-2021",
+      "filename": "gamestop-short-squeeze-2021.json",
+      "title": "GameStop's Infinite Squeeze: When Reddit Broke Wall Street",
+      "category": "finance",
+      "addedDate": "2026-03-14T00:00:00Z"
+    },
+    {
+      "id": "japan-yield-curve-2024",
+      "filename": "japan-yield-curve-2024.json",
+      "title": "Japan's Yield Curve Escape: Ending Decades of Monetary Extremism",
+      "category": "economics",
       "addedDate": "2026-03-14T00:00:00Z"
     },
     {
       "id": "lab-grown-meat-2024",
       "filename": "lab-grown-meat.json",
       "title": "Lab-Grown Meat: From FDA Approval to Your Plate",
-      "category": "technology",
-      "addedDate": "2026-03-14T00:00:00Z"
-    },
-    {
-      "id": "quantum-computing-2024",
-      "filename": "quantum-computing-debate.json",
-      "title": "Quantum Computing's Breakthrough—or Benchmarking Theater?",
       "category": "technology",
       "addedDate": "2026-03-14T00:00:00Z"
     },
@@ -31,95 +220,46 @@
       "addedDate": "2026-03-14T00:00:00Z"
     },
     {
-      "id": "ai-alignment-2024",
-      "filename": "ai-alignment-problem.json",
-      "title": "AI Alignment: When Claude Learns to Lie",
+      "id": "quantum-computing-2024",
+      "filename": "quantum-computing-debate.json",
+      "title": "Quantum Computing's Breakthrough—or Benchmarking Theater?",
       "category": "technology",
       "addedDate": "2026-03-14T00:00:00Z"
     },
     {
-      "id": "ftx-sbf-collapse-2022",
-      "filename": "ftx-sbf-collapse-2022.json",
-      "title": "FTX Collapse: When Crypto's Golden Boy Lost $32 Billion",
-      "category": "finance",
-      "addedDate": "2026-03-14T18:00:00Z"
+      "id": "saudi-china-petroyuan-2024",
+      "filename": "saudi-china-petroyuan-2024.json",
+      "title": "Saudi Arabia's Petroyuan Pivot: The Quiet End of the Petrodollar",
+      "category": "geopolitics",
+      "addedDate": "2026-03-14T00:00:00Z"
     },
     {
       "id": "silicon-valley-bank-2023",
       "filename": "silicon-valley-bank-2023.json",
-      "title": "Silicon Valley Bank: How a Bank Run Happened in 48 Hours",
+      "title": "Silicon Valley Bank: How 72 Hours of Tweets Killed a $200B Bank",
       "category": "finance",
-      "addedDate": "2026-03-14T18:00:00Z"
-    },
-    {
-      "id": "credit-suisse-collapse-2023",
-      "filename": "credit-suisse-collapse-2023.json",
-      "title": "Credit Suisse: The 167-Year-Old Bank That Died in a Weekend",
-      "category": "finance",
-      "addedDate": "2026-03-14T18:00:00Z"
-    },
-    {
-      "id": "argentina-milei-inflation-2024",
-      "filename": "argentina-milei-inflation-2024.json",
-      "title": "Argentina's Chainsaw President: Milei's Shock Therapy Experiment",
-      "category": "economics",
-      "addedDate": "2026-03-14T18:00:00Z"
-    },
-    {
-      "id": "gamestop-short-squeeze-2021",
-      "filename": "gamestop-short-squeeze-2021.json",
-      "title": "GameStop: When Reddit Traders Beat Wall Street at Its Own Game",
-      "category": "finance",
-      "addedDate": "2026-03-14T18:00:00Z"
-    },
-    {
-      "id": "china-property-evergrande-2024",
-      "filename": "china-property-evergrande-2024.json",
-      "title": "China's Property Crisis: Evergrande and the $300 Billion Unraveling",
-      "category": "economics",
-      "addedDate": "2026-03-14T18:00:00Z"
-    },
-    {
-      "id": "japan-yield-curve-2024",
-      "filename": "japan-yield-curve-2024.json",
-      "title": "Japan's Yield Curve Control: The End of Negative Interest Rates",
-      "category": "economics",
-      "addedDate": "2026-03-14T18:00:00Z"
-    },
-    {
-      "id": "saudi-china-petroyuan-2024",
-      "filename": "saudi-china-petroyuan-2024.json",
-      "title": "The Petroyuan: Saudi Arabia's Dollar Gambit",
-      "category": "geopolitics",
-      "addedDate": "2026-03-14T18:00:00Z"
-    },
-    {
-      "id": "wagner-africa-2023",
-      "filename": "wagner-africa-2023.json",
-      "title": "Wagner Group in Africa: Russia's Shadow Army After Prigozhin",
-      "category": "geopolitics",
-      "addedDate": "2026-03-14T18:00:00Z"
-    },
-    {
-      "id": "ukraine-grain-deal-2023",
-      "filename": "ukraine-grain-deal-2023.json",
-      "title": "Black Sea Grain Corridor: When Food Becomes a Weapon",
-      "category": "geopolitics",
-      "addedDate": "2026-03-14T18:00:00Z"
+      "addedDate": "2026-03-14T00:00:00Z"
     },
     {
       "id": "uk-pension-crisis-2022",
       "filename": "uk-pension-crisis-2022.json",
-      "title": "UK Pension Crisis: Liz Truss's 49-Day Economic Catastrophe",
+      "title": "Britain's Pension Crisis: When Liability-Driven Investment Met Reality",
       "category": "economics",
-      "addedDate": "2026-03-14T18:00:00Z"
+      "addedDate": "2026-03-14T00:00:00Z"
     },
     {
-      "id": "armenia-azerbaijan-2023",
-      "filename": "armenia-azerbaijan-2023.json",
-      "title": "Nagorno-Karabakh: The Frozen Conflict That Melted in 24 Hours",
+      "id": "ukraine-grain-deal-2023",
+      "filename": "ukraine-grain-deal-2023.json",
+      "title": "The Black Sea Grain Corridor: How Food Became a Weapon",
       "category": "geopolitics",
-      "addedDate": "2026-03-14T18:00:00Z"
+      "addedDate": "2026-03-14T00:00:00Z"
+    },
+    {
+      "id": "wagner-africa-2023",
+      "filename": "wagner-africa-2023.json",
+      "title": "After Prigozhin: Russia's Shadow Army Rebrands in Africa",
+      "category": "geopolitics",
+      "addedDate": "2026-03-14T00:00:00Z"
     }
   ]
 }

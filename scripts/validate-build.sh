@@ -6,6 +6,11 @@ set -e
 
 echo "🔍 Validating build requirements..."
 
+# Regenerate manifest to ensure it includes all topics
+echo "Regenerating manifest.json..."
+npm run generate-manifest
+echo ""
+
 # Check that all imported JSON files are tracked by git
 echo "Checking bundled topic files..."
 
