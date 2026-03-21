@@ -1,0 +1,11 @@
+# Check if any topic files were modified/added (excluding manifest.json)
+TOPIC_FILES_CHANGED=$(git diff --cached --name-only --diff-filter=ACM | grep '^public/topics/.*\.json$' | grep -v 'manifest.json' || true)
+
+if [ -n "$TOPIC_FILES_CHANGED" ]; then
+  echo "📝 Topic files changed, regenerating manifest..."
+  npm run generate-manifest
+
+  # Stage the updated manifest
+  git add public/topics/manifest.json
+  echo "✅ Manifest regenerated and staged"
+fi
